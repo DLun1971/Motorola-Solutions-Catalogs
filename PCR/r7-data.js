@@ -300,14 +300,15 @@ carry: {
           }
         ]
       },
-      cables: {
+cables: {
         label: 'Cables & Programming',
         icon: '',
         sections: [
           {
             title: 'Programming Cables',
             items: [
-              { pn: 'PMKN4265', desc: 'Mini GCAI Interface Cable (USB)', note: 'R7 — full rate data transfer' },
+              { pn: 'PMKN4115', desc: 'Portable Programming Cable (USB)', note: '' },
+              { pn: 'PMKN4117', desc: 'Programming, Test, and Alignment Cable', note: '' },
             ]
           },
           {
