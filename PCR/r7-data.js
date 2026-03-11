@@ -205,6 +205,7 @@ const RADIOS_DATA = {'r7': {
     { pn: 'PMPN4579A', desc: 'IMPRES Single-Unit Charger, CHN Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
     { pn: 'PMPN4582A', desc: 'IMPRES Single-Unit Charger, INDIA Plug', note: 'IMPRES, Li-Ion/NiMH, 100-240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
   ]
+},
 {
   title: 'IMPRES 2 Multi-Unit Fast Chargers',
   items: [
