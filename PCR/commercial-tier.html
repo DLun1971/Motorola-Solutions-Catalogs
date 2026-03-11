@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MOTOTRBO Commercial Tier — Accessory Compatibility Matrix</title>
+<link rel="stylesheet" href="../Shared/styles.css">
+<style>
+  :root {
+    --acc:      #2563eb;
+    --acc-lt:   #e8f0fc;
+    --acc-dark: #003d82;
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="tb-brand">
+    <img class="tb-logo" src="../Shared/motorola-solutions-logo.png" alt="Motorola Solutions">
+    <div class="tb-name">Motorola Solutions<span>MOTOTRBO Commercial Series</span></div>
+  </div>
+  <div class="tb-sep"></div>
+  <span class="tb-title">Accessory Compatibility Matrix</span>
+  <div class="tb-spacer"></div>
+  <span class="tb-tag">COMMERCIAL TIER</span>
+</div>
+
+<div class="page-body">
+  <nav class="radio-sidebar" id="radioSidebar"></nav>
+  <nav class="cat-sidebar" id="catSidebar"></nav>
+  <main class="content-panel" id="contentPanel">
+    <div class="content-inner" id="contentInner"></div>
+  </main>
+</div>
+
+<div class="copy-toast" id="copyToast">Part number copied!</div>
+
+<script>
+const CATALOG_TITLE    = 'MOTOTRBO';
+const CATALOG_SUBTITLE = 'Commercial Tier<br>Accessory Matrix';
+</script>
+
+<script src="commercial-tier-data.js"></script>
+<script src="../Shared/catalog.js"></script>
+
+</body>
+</html>
