@@ -191,15 +191,21 @@ const RADIOS_DATA = {'r7': {
         label: 'Chargers',
         icon: '',
         sections: [
-          {
-            title: 'IMPRES Single-Unit Chargers',
-            items: [
-              { pn: 'PMPN4522', desc: 'IMPRES Single-Unit Charger, US/NA Plug', note: 'IMPRES, Li-Ion/NiMH, 120VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
-              { pn: 'PMPN4523', desc: 'IMPRES Single-Unit Charger, EU Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
-              { pn: 'PMPN4524', desc: 'IMPRES Single-Unit Charger, UK/HK Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
-              { pn: 'PMPN4525', desc: 'IMPRES Single-Unit Charger, AUS/NZ Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
-            ]
-          },
+{
+  title: 'IMPRES Single-Unit Chargers',
+  items: [
+    { pn: 'PMPN4576A', desc: 'IMPRES Single-Unit Charger, US/CAN Plug', note: 'IMPRES, Li-Ion/NiMH, 120VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4573A', desc: 'IMPRES Single-Unit Charger, ARG Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4575A', desc: 'IMPRES Single-Unit Charger, BRZ Plug', note: 'IMPRES, Li-Ion/NiMH, 100-240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4572A', desc: 'IMPRES Single-Unit Charger, UK Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4577A', desc: 'IMPRES Single-Unit Charger, EURO Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4571A', desc: 'IMPRES Single-Unit Charger, AU/NZ Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4578A', desc: 'IMPRES Single-Unit Charger, JAP Plug', note: 'IMPRES, Li-Ion/NiMH, 100-240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4574A', desc: 'IMPRES Single-Unit Charger, KOR Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4579A', desc: 'IMPRES Single-Unit Charger, CHN Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+    { pn: 'PMPN4582A', desc: 'IMPRES Single-Unit Charger, INDIA Plug', note: 'IMPRES, Li-Ion/NiMH, 100-240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
+  ]
+},
           {
             title: 'IMPRES Multi-Unit Chargers',
             items: [
