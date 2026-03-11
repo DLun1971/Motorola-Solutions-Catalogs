@@ -330,14 +330,13 @@ cables: {
               
             ]
           },
-          {
-      title: 'Miscellaneous',
+{
             title: 'Miscellaneous',
             items: [
-              { pn: '0104058J40', desc: 'Dust Cover', note: 'Accessory port protection' },
-              { pn: 'PMLN8671', desc: 'NFC Kit', note: '' },
-              { pn: 'PMLN8672', desc: 'RFID Tag Kit (EU)', note: '' },
-              { pn: 'PMLN8673', desc: 'RFID Tag Kit (US)', note: '' },
+              { pn: 'PMHN4429',    desc: 'Mini GCAI Dust Cover', note: 'Install when accessory not in use' },
+              { pn: 'AY000808A01', desc: 'Screen Protector, Clear (single pack)', note: '' },
+              { pn: 'AY000808A02', desc: 'Screen Protector, Clear (bulk pack — 10)', note: '' },
+              { pn: 'AY000808A03', desc: 'Screen Protector, Clear (bulk pack — 50)', note: '' },
             ]
           }
         ]
