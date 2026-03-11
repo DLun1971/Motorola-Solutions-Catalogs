@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motorola Solutions Professional and Commercial Accessories Catalog</title>
+<title>Motorola Solutions — Professional & Commercial Accessories Catalog</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
 }
 
+/* ── TOPBAR ── */
 .topbar {
   background: #f0f2f5;
   border-bottom: 1px solid #d8dde6;
@@ -24,34 +25,63 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  position: sticky; top: 0; z-index: 100;
 }
 .tb-logo { height: 36px; width: auto; }
 .tb-sep { width: 1px; height: 24px; background: #d8dde6; }
 .tb-title { font-size: 14px; font-weight: 600; color: #1a2030; }
 
+/* ── HERO ── */
 .hero {
   background: #003d82;
   color: #fff;
-  padding: 60px 32px;
+  padding: 52px 32px;
   text-align: center;
 }
-.hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 12px; }
-.hero p { font-size: 15px; color: rgba(255,255,255,0.75); max-width: 500px; margin: 0 auto; }
+.hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 10px; line-height: 1.3; }
+.hero p { font-size: 14px; color: rgba(255,255,255,0.75); max-width: 560px; margin: 0 auto; }
 
+/* ── PAGE WRAPPER ── */
+.page-wrap { max-width: 960px; margin: 0 auto; padding: 0 32px 48px; }
+
+/* ── SECTION HEADERS ── */
+.section-header {
+  display: flex; align-items: center; gap: 10px;
+  margin: 36px 0 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #d8dde6;
+}
+.section-header h2 { font-size: 16px; font-weight: 700; color: #1a2030; }
+.section-icon { font-size: 18px; }
+
+/* ── INTRO SECTION ── */
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.intro-card {
+  background: #fff;
+  border: 1px solid #d8dde6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.intro-card-icon { font-size: 24px; margin-bottom: 10px; }
+.intro-card-title { font-size: 13px; font-weight: 700; color: #1a2030; margin-bottom: 6px; }
+.intro-card-text { font-size: 12px; color: #6b7a99; line-height: 1.6; }
+
+/* ── CATALOG CARDS ── */
 .catalogs {
-  max-width: 900px;
-  margin: 48px auto;
-  padding: 0 32px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  gap: 20px;
 }
-
 .catalog-card {
   background: #fff;
   border: 1px solid #d8dde6;
   border-radius: 10px;
-  padding: 28px;
+  padding: 24px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   transition: box-shadow 0.2s, transform 0.2s;
   text-decoration: none;
@@ -62,116 +92,309 @@ body {
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
   transform: translateY(-2px);
 }
+.card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 12px; }
 .card-icon {
-  width: 48px; height: 48px;
+  width: 44px; height: 44px;
   background: #e8f0fc;
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 22px;
-  margin-bottom: 16px;
+  font-size: 20px;
 }
-.card-title {
-  font-size: 17px;
-  font-weight: 700;
-  color: #1a2030;
-  margin-bottom: 6px;
+.card-updated {
+  font-size: 10px; color: #9aa3b8;
+  font-family: 'JetBrains Mono', monospace;
 }
-.card-sub {
-  font-size: 12px;
-  color: #6b7a99;
-  margin-bottom: 16px;
-  line-height: 1.5;
-}
-.card-pages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
+.card-title { font-size: 16px; font-weight: 700; color: #1a2030; margin-bottom: 5px; }
+.card-sub { font-size: 12px; color: #6b7a99; margin-bottom: 14px; line-height: 1.5; }
+.card-pages { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 16px; }
 .card-page {
-  font-size: 10.5px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 4px;
-  background: #e8f0fc;
-  color: #2563eb;
+  font-size: 10.5px; font-weight: 600;
+  padding: 3px 9px; border-radius: 4px;
+  background: #e8f0fc; color: #2563eb;
   border: 1px solid #bdd5f7;
 }
-.card-arrow {
-  margin-top: 20px;
-  font-size: 12px;
-  font-weight: 600;
-  color: #2563eb;
+.card-arrow { font-size: 12px; font-weight: 600; color: #2563eb; }
+
+/* ── HOW TO USE ── */
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.how-card {
+  background: #fff;
+  border: 1px solid #d8dde6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.how-step {
+  width: 28px; height: 28px; flex-shrink: 0;
+  background: #003d82; color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+}
+.how-title { font-size: 13px; font-weight: 700; color: #1a2030; margin-bottom: 4px; }
+.how-text { font-size: 12px; color: #6b7a99; line-height: 1.6; }
+
+/* ── OFFLINE BOX ── */
+.offline-box {
+  background: #e8f0fc;
+  border: 1px solid #bdd5f7;
+  border-radius: 8px;
+  padding: 20px 24px;
+  display: flex; align-items: flex-start; gap: 16px;
+}
+.offline-icon { font-size: 28px; flex-shrink: 0; }
+.offline-title { font-size: 14px; font-weight: 700; color: #1a2030; margin-bottom: 6px; }
+.offline-text { font-size: 12px; color: #3a4560; line-height: 1.7; }
+.kbd {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; font-weight: 600;
+  background: #fff; color: #1a2030;
+  border: 1px solid #c8cfd9;
+  border-radius: 4px;
+  padding: 1px 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
-.coming-soon { opacity: 0.5; cursor: not-allowed; pointer-events: none; }
+/* ── LEGEND ── */
+.legend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+.legend-item {
+  background: #fff;
+  border: 1px solid #d8dde6;
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+.legend-badge {
+  display: inline-block;
+  font-size: 10px; font-weight: 700;
+  padding: 2px 8px; border-radius: 3px;
+  margin-bottom: 8px;
+}
+.lb-impres { background: #e8f0fc; color: #2563eb; border: 1px solid #bdd5f7; }
+.lb-ip68   { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+.lb-ip67   { background: #e0f2fe; color: #0369a1; border: 1px solid #93c5fd; }
+.lb-ip54   { background: #fefce8; color: #713f12; border: 1px solid #fde68a; }
+.lb-ul     { background: #fef3c7; color: #b45309; border: 1px solid #f5d98a; }
+.lb-bt     { background: #ede9fe; color: #5b21b6; border: 1px solid #c4b5fd; }
+.lb-atex   { background: #fee2e2; color: #c0392b; border: 1px solid #fca5a5; }
+.lb-dmr    { background: #e8f0fc; color: #2563eb; border: 1px solid #bfdbfe; }
+.legend-title { font-size: 12px; font-weight: 700; color: #1a2030; margin-bottom: 3px; }
+.legend-desc { font-size: 11px; color: #6b7a99; line-height: 1.5; }
 
+/* ── FOOTER ── */
 .footer {
   text-align: center;
-  padding: 32px;
+  padding: 24px 32px;
   font-size: 11px;
   color: #9aa3b8;
   border-top: 1px solid #d8dde6;
-  margin-top: 48px;
+  margin-top: 24px;
 }
 </style>
 </head>
 <body>
 
+<!-- TOPBAR -->
 <div class="topbar">
   <img class="tb-logo" src="Shared/motorola-solutions-logo.png" alt="Motorola Solutions">
   <div class="tb-sep"></div>
   <span class="tb-title">Accessory Catalog Portal</span>
 </div>
 
+<!-- HERO -->
 <div class="hero">
-  <h1>Motorola Solutions Accessory Catalogs</h1>
-  <p>Select a catalog below to browse accessory compatibility for your radio platform</p>
+  <h1>Motorola Solutions Professional &amp;<br>Commercial Accessories Catalog</h1>
+  <p>Interactive accessory compatibility reference for MOTOTRBO portable radio platforms</p>
 </div>
 
-<div class="catalogs">
+<div class="page-wrap">
 
-  <a class="catalog-card" href="PCR/r7.html">
-    <div class="card-icon">📻</div>
-    <div class="card-title">R7 / Ion / R5</div>
-    <div class="card-sub">MOTOTRBO R-Series professional portable radios</div>
-    <div class="card-pages">
-      <span class="card-page">R7</span>
-      <span class="card-page">Ion</span>
-      <span class="card-page">R5</span>
-      <span class="card-page">R7Ex ATEX</span>
+  <!-- INTRO -->
+  <div class="section-header">
+    <span class="section-icon">ℹ️</span>
+    <h2>About This Resource</h2>
+  </div>
+  <div class="intro-grid">
+    <div class="intro-card">
+      <div class="intro-card-icon">🎯</div>
+      <div class="intro-card-title">Purpose</div>
+      <div class="intro-card-text">A comprehensive accessory compatibility reference for Motorola Solutions MOTOTRBO professional and commercial portable radios. Quickly identify compatible accessories by radio model and category.</div>
     </div>
-    <div class="card-arrow">Browse catalog →</div>
-  </a>
-
-  <a class="catalog-card" href="PCR/xpr-legacy.html">
-    <div class="card-icon">📡</div>
-    <div class="card-title">XPR Legacy</div>
-    <div class="card-sub">MOTOTRBO XPR series legacy portable radios</div>
-    <div class="card-pages">
-      <span class="card-page">XPR 7000e</span>
-      <span class="card-page">XPR 3000e</span>
+    <div class="intro-card">
+      <div class="intro-card-icon">📋</div>
+      <div class="intro-card-title">What's Included</div>
+      <div class="intro-card-text">Part numbers, descriptions, compatibility flags, IP ratings, UL HazLoc certifications, IMPRES intelligence indicators, firmware requirements and accessory notes.</div>
     </div>
-    <div class="card-arrow">Browse catalog →</div>
-  </a>
-
-  <a class="catalog-card" href="PCR/commercial-tier.html">
-    <div class="card-icon">🔧</div>
-    <div class="card-title">Commercial Tier</div>
-    <div class="card-sub">MOTOTRBO commercial portable radios</div>
-    <div class="card-pages">
-      <span class="card-page">R2</span>
-      <span class="card-page">R7 Commercial</span>
+    <div class="intro-card">
+      <div class="intro-card-icon">🔄</div>
+      <div class="intro-card-title">Always Current</div>
+      <div class="intro-card-text">This catalog is regularly updated to reflect the latest Motorola Solutions accessory offerings. Check the last updated date on each catalog card below.</div>
     </div>
-    <div class="card-arrow">Browse catalog →</div>
-  </a>
+  </div>
 
-  
+  <!-- CATALOGS -->
+  <div class="section-header">
+    <span class="section-icon">📻</span>
+    <h2>Available Catalogs</h2>
+  </div>
+  <div class="catalogs">
+
+    <a class="catalog-card" href="PCR/r7.html">
+      <div class="card-top">
+        <div class="card-icon">📻</div>
+        <span class="card-updated">Updated: Jan 2025</span>
+      </div>
+      <div class="card-title">R7 / Ion / R5</div>
+      <div class="card-sub">MOTOTRBO R-Series professional portable radios including ATEX variants</div>
+      <div class="card-pages">
+        <span class="card-page">R7</span>
+        <span class="card-page">Ion</span>
+        <span class="card-page">R5</span>
+        <span class="card-page">R7Ex ATEX</span>
+      </div>
+      <div class="card-arrow">Browse catalog →</div>
+    </a>
+
+    <a class="catalog-card" href="PCR/xpr-legacy.html">
+      <div class="card-top">
+        <div class="card-icon">📡</div>
+        <span class="card-updated">Updated: Jan 2025</span>
+      </div>
+      <div class="card-title">XPR Legacy</div>
+      <div class="card-sub">MOTOTRBO XPR series legacy professional portable radios</div>
+      <div class="card-pages">
+        <span class="card-page">XPR 7000e</span>
+        <span class="card-page">XPR 3000e</span>
+      </div>
+      <div class="card-arrow">Browse catalog →</div>
+    </a>
+
+    <a class="catalog-card" href="PCR/commercial-tier.html">
+      <div class="card-top">
+        <div class="card-icon">🔧</div>
+        <span class="card-updated">Updated: Jan 2025</span>
+      </div>
+      <div class="card-title">Commercial Tier</div>
+      <div class="card-sub">MOTOTRBO commercial portable radios for everyday business use</div>
+      <div class="card-pages">
+        <span class="card-page">R2</span>
+        <span class="card-page">R7 Commercial</span>
+      </div>
+      <div class="card-arrow">Browse catalog →</div>
+    </a>
+
+  </div>
+
+  <!-- HOW TO USE -->
+  <div class="section-header">
+    <span class="section-icon">💡</span>
+    <h2>How To Use This Catalog</h2>
+  </div>
+  <div class="how-grid">
+    <div class="how-card">
+      <div class="how-step">1</div>
+      <div>
+        <div class="how-title">Select a Catalog</div>
+        <div class="how-text">Click on the catalog card above that matches your radio platform.</div>
+      </div>
+    </div>
+    <div class="how-card">
+      <div class="how-step">2</div>
+      <div>
+        <div class="how-title">Choose Your Radio</div>
+        <div class="how-text">Select your specific radio model from the left panel inside the catalog.</div>
+      </div>
+    </div>
+    <div class="how-card">
+      <div class="how-step">3</div>
+      <div>
+        <div class="how-title">Browse Categories</div>
+        <div class="how-text">Use the middle panel to navigate between accessory categories such as batteries, headsets, and chargers.</div>
+      </div>
+    </div>
+    <div class="how-card">
+      <div class="how-step">4</div>
+      <div>
+        <div class="how-title">Copy Part Numbers</div>
+        <div class="how-text">Click any part number in the catalog to instantly copy it to your clipboard.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- OFFLINE BOX -->
+  <div class="offline-box" style="margin-top: 20px;">
+    <div class="offline-icon">💾</div>
+    <div>
+      <div class="offline-title">Using This Catalog Offline</div>
+      <div class="offline-text">
+        These catalogs can be saved for use without an internet connection. Simply open any catalog page and press <span class="kbd">Ctrl</span> + <span class="kbd">S</span> on Windows or <span class="kbd">⌘</span> + <span class="kbd">S</span> on Mac to save the complete page to your computer. The saved file will work exactly like the online version — no internet required.
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="section-header">
+    <span class="section-icon">🏷️</span>
+    <h2>Badge & Flag Reference</h2>
+  </div>
+  <div class="legend-grid">
+    <div class="legend-item">
+      <div class="legend-badge lb-impres">IMPRES</div>
+      <div class="legend-title">IMPRES</div>
+      <div class="legend-desc">Motorola IMPRES intelligent battery and audio system. Enables smart charging, battery health monitoring and intelligent audio features.</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-badge lb-ip68">IP68</div>
+      <div class="legend-title">IP68</div>
+      <div class="legend-desc">Ingress Protection rating — dustproof and submersible in water beyond 1 metre. Highest standard water protection.</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-badge lb-ip67">IP67</div>
+      <div class="legend-title">IP67</div>
+      <div class="legend-desc">Ingress Protection rating — dustproof and submersible in water up to 1 metre for 30 minutes.</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-badge lb-ip54">IP54</div>
+      <div class="legend-title">IP54</div>
+      <div class="legend-desc">Ingress Protection rating — dust resistant and splash proof from any direction.</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-badge lb-ul">UL</div>
+      <div class="legend-title">UL HazLoc</div>
+      <div class="legend-desc">UL certified for use in hazardous locations where flammable gases or combustible dust may be present.</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-badge lb-bt">BT</div>
+      <div class="legend-title">Bluetooth</div>
+      <div class="legend-desc">Wireless Bluetooth connectivity. Operations Critical Wireless accessories maintain connection reliability in demanding environments.</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-badge lb-atex">ATEX</div>
+      <div class="legend-title">ATEX / IECEx</div>
+      <div class="legend-desc">European and international certification for equipment used in explosive atmospheres. Zone 1 and Zone 2 rated.</div>
+    </div>
+    <div class="legend-item">
+      <div class="legend-badge lb-dmr">DMR</div>
+      <div class="legend-title">DMR</div>
+      <div class="legend-desc">Digital Mobile Radio standard. MOTOTRBO supports DMR Tier II conventional and Tier III trunking protocols.</div>
+    </div>
   </div>
 
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
-  © Motorola Solutions — Accessory Catalog Portal
+  © Motorola Solutions — Professional &amp; Commercial Accessories Catalog Portal
 </div>
 
 </body>
