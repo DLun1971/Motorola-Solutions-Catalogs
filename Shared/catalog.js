@@ -77,7 +77,7 @@ function renderContent() {
   const panel = document.getElementById('contentInner');
   const radio = RADIOS[activeRadio];
   const cat   = radio.categories[activeCat];
-  const total = cat.sections.reduce((s, sec) => s + sec.items.length, 0);
+  const total = cat.sections.reduce((s, sec) => s + items.length, 0);
   const cols  = cat.cols || null;
   const specCols = cols ? cols.slice(2) : [];
   const textCols = new Set(['NRR','Wires','FW Required','Capacity','IP Rating','Temp Range','Pockets']);
@@ -101,7 +101,7 @@ function renderContent() {
     + '</div>';
 
   cat.sections.forEach(sec => {
-    if (!sec.items.length) return;
+    if (!items.length) return;
     html += '<div class="acc-subsection">';
     html += '<div class="acc-subsection-title">' + sec.title + '</div>';
 
