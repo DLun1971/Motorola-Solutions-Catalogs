@@ -855,6 +855,7 @@ const RADIOS_DATA = {'r7': {
     { pn: 'PMPN4642', desc: 'IMPRES 2 Multi-Unit Fast Charger, INDIA Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
   ]
 }, 
+{ pn: 'AS000180A01', desc: 'Interchangeable Charging Pocket for Ion', note: 'For IMPRES 2 Multi-Unit Fast Charger', checks: {impres: 0, pockets: "", recondn: 0} },
       {
             title: 'Vehicular Charger',
             items: [
