@@ -340,11 +340,25 @@ cables: {
               { pn: 'AY000808A03', desc: 'Screen Protector, Clear (bulk pack — 50)', note: '' },
             ]
           }
+     ]
+      },
+      batterytools: {
+        label: 'Battery Management',
+        icon: '',
+        sections: [
+          {
+            title: 'IMPRES Battery Fleet Management',
+            items: [
+              { pn: 'HKVN4036', desc: 'IMPRES Battery Fleet Management Entitlement ID (EID) — NA/CAN', note: '' },
+              { pn: 'HKVN4037', desc: 'IMPRES Battery Fleet Management Entitlement ID (EID) — EMEA', note: '' },
+              { pn: 'HKVN4038', desc: 'IMPRES Battery Fleet Management Entitlement ID (EID) — LA', note: '' },
+              { pn: 'HKVN4039', desc: 'IMPRES Battery Fleet Management Entitlement ID (EID) — Asia', note: '' },
+            ]
+          }
         ]
       }
     }
   },
-
   'r5': {
     name: 'MOTOTRBO R5',
     sub: 'Professional DMR Portable',
