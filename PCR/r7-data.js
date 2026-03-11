@@ -300,17 +300,17 @@ carry: {
           }
         ]
       },
-cables: {
-  label: 'Cables & Programming',
-  icon: '',
-  sections: [
-    {
-      title: 'Programming Cables',
-      items: [
-        { pn: 'PMKN4265', desc: 'Mini GCAI Interface Cable (USB)', note: 'R7 / Ion — full rate data transfer' },
-      ]
-    },
-    {
+      cables: {
+        label: 'Cables & Programming',
+        icon: '',
+        sections: [
+          {
+            title: 'Programming Cables',
+            items: [
+              { pn: 'PMKN4265', desc: 'Mini GCAI Interface Cable (USB)', note: 'R7 — full rate data transfer' },
+            ]
+          },
+          {
       title: 'Miscellaneous',
             title: 'Miscellaneous',
             items: [
@@ -893,20 +893,25 @@ cables: {
         { pn: 'PMLN4651', desc: 'Replacement 2in Fixed Angle Spring-Action Belt Clip', note: 'Plastic, 2in fixed' },
         { pn: 'PMLN7008', desc: 'Replacement 2.5in Fixed Angle Spring-Action Belt Clip', note: 'Plastic, 2.5in fixed' },
         { pn: 'PMLN5407', desc: 'Replacement 2.5in Hard Leather Swivel Belt Loop', note: 'Leather, 2.5in swivel' },
-        { pn: 'PMLN5409', desc: 'Replacement 3in Hard Leather Swivel Belt Loop', note: 'Leather, 3in swivel' },
+       { pn: 'PMLN5409', desc: 'Replacement 3in Hard Leather Swivel Belt Loop', note: 'Leather, 3in swivel' },
       ]
     }
   ]
-},      
-      {
-      title: 'Programming Cables',
-      items: [
-        { pn: 'PMKN4265', desc: 'Mini GCAI Interface Cable (USB)', note: 'Full rate data transfer' },
-        { pn: 'PMKN4230', desc: 'UL Certified Programming/Data Cable', note: 'Ion only' },
-      ]
-    },
-    {
+},
+      cables: {
+        label: 'Cables & Programming',
+        icon: '',
+        sections: [
+          {
+            title: 'Programming Cables',
+            items: [
+              { pn: 'PMKN4265', desc: 'Mini GCAI Interface Cable (USB)', note: 'Full rate data transfer' },
+              { pn: 'PMKN4230', desc: 'UL Certified Programming/Data Cable', note: 'Ion only' },
+            ]
+          },
+          {
             title: 'Miscellaneous',
+            items: [            title: 'Miscellaneous',
             items: [
               { pn: '0104058J40', desc: 'Dust Cover', note: 'Accessory port protection' },
             ]
