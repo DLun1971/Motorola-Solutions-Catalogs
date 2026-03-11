@@ -661,7 +661,7 @@ cables: {
           }
         ]
       },
-      cables: {
+      
   cables: {
   label: 'Cables & Programming',
   icon: '',
@@ -897,8 +897,8 @@ cables: {
       ]
     }
   ]
-
-    {
+},      
+      {
       title: 'Programming Cables',
       items: [
         { pn: 'PMKN4265', desc: 'Mini GCAI Interface Cable (USB)', note: 'Full rate data transfer' },
