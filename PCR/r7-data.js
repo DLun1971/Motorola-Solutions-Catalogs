@@ -205,16 +205,23 @@ const RADIOS_DATA = {'r7': {
     { pn: 'PMPN4579A', desc: 'IMPRES Single-Unit Charger, CHN Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
     { pn: 'PMPN4582A', desc: 'IMPRES Single-Unit Charger, INDIA Plug', note: 'IMPRES, Li-Ion/NiMH, 100-240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
   ]
+{
+  title: 'IMPRES 2 Multi-Unit Fast Chargers',
+  items: [
+    { pn: 'PMPN4284', desc: 'IMPRES 2 Multi-Unit Fast Charger, US/CAN Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4289', desc: 'IMPRES 2 Multi-Unit Fast Charger, EURO Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4290', desc: 'IMPRES 2 Multi-Unit Fast Charger, UK Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4291', desc: 'IMPRES 2 Multi-Unit Fast Charger, ARG Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4292', desc: 'IMPRES 2 Multi-Unit Fast Charger, BZL Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4293', desc: 'IMPRES 2 Multi-Unit Fast Charger, AU/NZ Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4294', desc: 'IMPRES 2 Multi-Unit Fast Charger, KOR Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4295', desc: 'IMPRES 2 Multi-Unit Fast Charger, JAP Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4296', desc: 'IMPRES 2 Multi-Unit Fast Charger, CHN Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4462', desc: 'IMPRES 2 Multi-Unit Fast Charger, TW Plug', note: '100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'AS000129A01', desc: 'Interchangeable Charging Pocket', note: 'For IMPRES 2 Multi-Unit Fast Charger', checks: {impres: 0, pockets: "", recondn: 0} },
+    { pn: 'BR000272A01', desc: 'Wall Mount Bracket for IMPRES 2 Multi-Unit Charger', note: '', checks: {impres: 0, pockets: "", recondn: 0} },
+  ]
 },
-          {
-            title: 'IMPRES Multi-Unit Chargers',
-            items: [
-              { pn: 'PMPN4560', desc: 'IMPRES Multi-Unit Charger, US/NA Plug', note: 'IMPRES, 6-pocket, 100-240VAC, 117×445×170mm', checks: {impres: 1, pockets: "6", recondn: 0} },
-              { pn: 'PMPN4561', desc: 'IMPRES Multi-Unit Charger, EU Plug', note: 'IMPRES, 6-pocket, 100-240VAC', checks: {impres: 1, pockets: "6", recondn: 0} },
-              { pn: 'PMPN4562', desc: 'IMPRES Multi-Unit Charger, UK/HK Plug', note: 'IMPRES, 6-pocket, 100-240VAC', checks: {impres: 1, pockets: "6", recondn: 0} },
-              { pn: 'PMPN4563', desc: 'IMPRES Multi-Unit Charger, AUS/NZ Plug', note: 'IMPRES, 6-pocket, 100-240VAC', checks: {impres: 1, pockets: "6", recondn: 0} },
-            ]
-          },
           {
             title: 'Vehicular Charger',
             items: [
