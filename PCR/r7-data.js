@@ -911,7 +911,6 @@ carry: {
           },
           {
             title: 'Miscellaneous',
-            items: [            title: 'Miscellaneous',
             items: [
               { pn: '0104058J40', desc: 'Dust Cover', note: 'Accessory port protection' },
             ]
@@ -920,7 +919,6 @@ carry: {
       }
     }
   },
-
   // ── R7Ex ATEX ──────────────────────────────────────────────────────────────
   'r7ex': {
     name: 'MOTOTRBO R7Ex',
