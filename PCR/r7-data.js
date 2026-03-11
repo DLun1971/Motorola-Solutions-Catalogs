@@ -841,7 +841,21 @@ const RADIOS_DATA = {'r7': {
     { pn: 'PMPN4641', desc: 'IMPRES 2 Single-Unit Charger, INDIA Plug', note: 'IMPRES 2, Li-Ion, 240VAC', checks: {impres: 1, pockets: "1", recondn: 0} },
   ]
 },
-          {
+   {
+  title: 'IMPRES 2 Multi-Unit Fast Chargers — Ion',
+  items: [
+    { pn: 'PMPN4498', desc: 'IMPRES 2 Multi-Unit Fast Charger, US Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4516', desc: 'IMPRES 2 Multi-Unit Fast Charger, UK Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4499', desc: 'IMPRES 2 Multi-Unit Fast Charger, EURO Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4517', desc: 'IMPRES 2 Multi-Unit Fast Charger, AU/NZ Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4518', desc: 'IMPRES 2 Multi-Unit Fast Charger, ARG Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4521', desc: 'IMPRES 2 Multi-Unit Fast Charger, BZL Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4295', desc: 'IMPRES 2 Multi-Unit Fast Charger, JAP Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4520', desc: 'IMPRES 2 Multi-Unit Fast Charger, KOR Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+    { pn: 'PMPN4642', desc: 'IMPRES 2 Multi-Unit Fast Charger, INDIA Plug', note: 'IMPRES 2, Li-Ion/NiMH, 100-240VAC, 6 pockets', checks: {impres: 1, pockets: "6", recondn: 0} },
+  ]
+}, 
+      {
             title: 'Vehicular Charger',
             items: [
               { pn: 'NNTN7616', desc: 'IMPRES Vehicular Charger Kit', note: 'IMPRES, Li-Ion/NiMH, hard-wired to vehicle battery', checks: {impres: 1, pockets: "1", recondn: 0} },
