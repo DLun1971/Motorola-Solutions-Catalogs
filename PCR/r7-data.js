@@ -894,16 +894,23 @@ carry: {
             ]
           },
           {
-            title: 'Carry Straps & Cases',
-            items: [
-              { pn: 'HLN9985',  desc: 'Waterproof Bag with Large Strap', note: 'Securely carries MOTOTRBO two-way radios' },
-              { pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: 'Nylon' },
-              { pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Leather' },
-              { pn: 'RLN6487',  desc: 'Leather Radio Strap — XL', note: 'Leather' },
-            ]
-          }
-        ]
-      },
+       carry: {
+  label: 'Carry Solutions',
+  icon: '',
+  sections: [
+    {
+      title: 'Carry Cases & Belt Clips',
+      items: [
+        { pn: 'PMLN8126', desc: 'Plastic Carry Case with 2.5in Fixed-Angle Spring-Action Belt Clip', note: 'Plastic, 2.5in fixed' },
+        { pn: 'PMLN8127', desc: 'Plastic Carry Case with 2.5in Hard Leather Swivel Belt Loop', note: 'Plastic, 2.5in swivel' },
+        { pn: 'PMLN4651', desc: 'Replacement 2in Fixed Angle Spring-Action Belt Clip', note: 'Plastic, 2in fixed' },
+        { pn: 'PMLN7008', desc: 'Replacement 2.5in Fixed Angle Spring-Action Belt Clip', note: 'Plastic, 2.5in fixed' },
+        { pn: 'PMLN5407', desc: 'Replacement 2.5in Hard Leather Swivel Belt Loop', note: 'Leather, 2.5in swivel' },
+        { pn: 'PMLN5409', desc: 'Replacement 3in Hard Leather Swivel Belt Loop', note: 'Leather, 3in swivel' },
+      ]
+    }
+  ]
+},
       cables: {
         label: 'Cables & Programming',
         icon: '',
