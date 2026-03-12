@@ -235,29 +235,30 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       antennas: {
+        cols: ["Part Number", "Description", "Band", "Freq", "Ant Type", "Length"],
         label: 'Antennas',
         icon: '',
         sections: [
           {
             title: 'UHF Antennas',
             items: [
-              { img: null, pn: 'PMAE4079', desc: 'UHF/GPS Wideband Slim Whip Antenna', note: '400-527 MHz, 15cm' },
-              { img: null, pn: 'PMAE4069', desc: 'UHF/GPS Stubby Antenna', note: '403-450 MHz, 9cm' },
-              { img: null, pn: 'PMAE4070', desc: 'UHF/GPS Stubby Antenna', note: '440-490 MHz, 9cm' },
-              { img: null, pn: 'PMAE4071', desc: 'UHF/GPS Stubby Antenna', note: '470-527 MHz, 9cm' },
-              { img: null, pn: 'AN000348A01', desc: 'UHF Stubby Wideband Antenna', note: '400-527 MHz, 9cm' },
+              { img: null, pn: 'PMAE4079', desc: 'UHF/GPS Wideband Slim Whip Antenna', note: '400-527 MHz, 15cm', checks: {band: 'UHF', freq_mhz: '400-527', ant_type: 'Whip', len_cm: '15'} },
+              { img: null, pn: 'PMAE4069', desc: 'UHF/GPS Stubby Antenna', note: '403-450 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '403-450', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAE4070', desc: 'UHF/GPS Stubby Antenna', note: '440-490 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '440-490', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAE4071', desc: 'UHF/GPS Stubby Antenna', note: '470-527 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '470-527', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'AN000348A01', desc: 'UHF Stubby Wideband Antenna', note: '400-527 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '400-527', ant_type: 'Stubby', len_cm: '9'} },
             ]
           },
           {
             title: 'VHF Antennas',
             items: [
-              { img: null, pn: 'PMAD4117', desc: 'VHF/GPS Helical Antenna', note: '136-155 MHz, 15cm' },
-              { img: null, pn: 'PMAD4116', desc: 'VHF/GPS Helical Antenna', note: '144-165 MHz, 15cm' },
-              { img: null, pn: 'PMAD4118', desc: 'VHF/GPS Helical Antenna', note: '152-174 MHz, 15cm' },
-              { img: null, pn: 'PMAD4147', desc: 'VHF/GPS Wideband Slim Whip Antenna', note: '136-174 MHz, 20cm' },
-              { img: null, pn: 'PMAD4119', desc: 'VHF/GPS Stubby Antenna', note: '136-148 MHz, 9cm' },
-              { img: null, pn: 'PMAD4120', desc: 'VHF/GPS Stubby Antenna', note: '146-160 MHz, 9cm' },
-              { img: null, pn: 'PMAD4121', desc: 'VHF Stubby Antenna', note: '160-174 MHz, 9cm' },
+              { img: null, pn: 'PMAD4117', desc: 'VHF/GPS Helical Antenna', note: '136-155 MHz, 15cm', checks: {band: 'VHF', freq_mhz: '136-155', ant_type: 'Helical', len_cm: '15'} },
+              { img: null, pn: 'PMAD4116', desc: 'VHF/GPS Helical Antenna', note: '144-165 MHz, 15cm', checks: {band: 'VHF', freq_mhz: '144-165', ant_type: 'Helical', len_cm: '15'} },
+              { img: null, pn: 'PMAD4118', desc: 'VHF/GPS Helical Antenna', note: '152-174 MHz, 15cm', checks: {band: 'VHF', freq_mhz: '152-174', ant_type: 'Helical', len_cm: '15'} },
+              { img: null, pn: 'PMAD4147', desc: 'VHF/GPS Wideband Slim Whip Antenna', note: '136-174 MHz, 20cm', checks: {band: 'VHF', freq_mhz: '136-174', ant_type: 'Whip', len_cm: '20'} },
+              { img: null, pn: 'PMAD4119', desc: 'VHF/GPS Stubby Antenna', note: '136-148 MHz, 9cm', checks: {band: 'VHF', freq_mhz: '136-148', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAD4120', desc: 'VHF/GPS Stubby Antenna', note: '146-160 MHz, 9cm', checks: {band: 'VHF', freq_mhz: '146-160', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAD4121', desc: 'VHF Stubby Antenna', note: '160-174 MHz, 9cm', checks: {band: 'VHF', freq_mhz: '160-174', ant_type: 'Stubby', len_cm: '9'} },
             ]
           },
           {
@@ -585,6 +586,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       antennas: {
+        cols: ["Part Number", "Description", "Band", "Freq", "Ant Type", "Length"],
         label: 'Antennas',
         icon: '',
         sections: [
@@ -592,22 +594,22 @@ const RADIOS_DATA = {'r7': {
             title: 'UHF Antennas',
             items: [
               { img: null, pn: 'PMAE4079',   desc: 'UHF/GPS Wideband Slim Whip Antenna', note: '403-527 MHz, 15cm, whip' },
-              { img: null, pn: 'PMAE4069',   desc: 'UHF/GPS Stubby Antenna', note: '403-450 MHz, 9cm, stubby' },
-              { img: null, pn: 'PMAE4070',   desc: 'UHF/GPS Stubby Antenna', note: '440-490 MHz, 9cm, stubby' },
-              { img: null, pn: 'PMAE4071',   desc: 'UHF/GPS Stubby Antenna', note: '470-527 MHz, 9cm, stubby' },
-              { img: null, pn: 'AN000348A01', desc: 'UHF Stubby Wideband Antenna', note: '400-527 MHz, 9cm, stubby' },
+              { img: null, pn: 'PMAE4069', desc: 'UHF/GPS Stubby Antenna', note: '403-450 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '403-450', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAE4070', desc: 'UHF/GPS Stubby Antenna', note: '440-490 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '440-490', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAE4071', desc: 'UHF/GPS Stubby Antenna', note: '470-527 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '470-527', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'AN000348A01', desc: 'UHF Stubby Wideband Antenna', note: '400-527 MHz, 9cm', checks: {band: 'UHF', freq_mhz: '400-527', ant_type: 'Stubby', len_cm: '9'} },
             ]
           },
           {
             title: 'VHF Antennas',
             items: [
-              { img: null, pn: 'PMAD4117', desc: 'VHF/GPS Helical Antenna', note: '136-155 MHz, 15cm' },
-              { img: null, pn: 'PMAD4116', desc: 'VHF/GPS Helical Antenna', note: '144-165 MHz, 15cm' },
-              { img: null, pn: 'PMAD4118', desc: 'VHF/GPS Helical Antenna', note: '152-174 MHz, 15cm' },
-              { img: null, pn: 'PMAD4147', desc: 'VHF/GPS Wideband Slim Whip Antenna', note: '136-174 MHz, 20cm' },
-              { img: null, pn: 'PMAD4119', desc: 'VHF/GPS Stubby Antenna', note: '136-148 MHz, 9cm' },
-              { img: null, pn: 'PMAD4120', desc: 'VHF/GPS Stubby Antenna', note: '146-160 MHz, 9cm' },
-              { img: null, pn: 'PMAD4121', desc: 'VHF Stubby Antenna', note: '160-174 MHz, 9cm' },
+              { img: null, pn: 'PMAD4117', desc: 'VHF/GPS Helical Antenna', note: '136-155 MHz, 15cm', checks: {band: 'VHF', freq_mhz: '136-155', ant_type: 'Helical', len_cm: '15'} },
+              { img: null, pn: 'PMAD4116', desc: 'VHF/GPS Helical Antenna', note: '144-165 MHz, 15cm', checks: {band: 'VHF', freq_mhz: '144-165', ant_type: 'Helical', len_cm: '15'} },
+              { img: null, pn: 'PMAD4118', desc: 'VHF/GPS Helical Antenna', note: '152-174 MHz, 15cm', checks: {band: 'VHF', freq_mhz: '152-174', ant_type: 'Helical', len_cm: '15'} },
+              { img: null, pn: 'PMAD4147', desc: 'VHF/GPS Wideband Slim Whip Antenna', note: '136-174 MHz, 20cm', checks: {band: 'VHF', freq_mhz: '136-174', ant_type: 'Whip', len_cm: '20'} },
+              { img: null, pn: 'PMAD4119', desc: 'VHF/GPS Stubby Antenna', note: '136-148 MHz, 9cm', checks: {band: 'VHF', freq_mhz: '136-148', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAD4120', desc: 'VHF/GPS Stubby Antenna', note: '146-160 MHz, 9cm', checks: {band: 'VHF', freq_mhz: '146-160', ant_type: 'Stubby', len_cm: '9'} },
+              { img: null, pn: 'PMAD4121', desc: 'VHF Stubby Antenna', note: '160-174 MHz, 9cm', checks: {band: 'VHF', freq_mhz: '160-174', ant_type: 'Stubby', len_cm: '9'} },
             ]
           },
           {
@@ -1030,6 +1032,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       antennas: {
+        cols: ["Part Number", "Description", "Band", "Freq", "Ant Type", "Length"],
         label: 'Antennas',
         icon: '',
         sections: [
