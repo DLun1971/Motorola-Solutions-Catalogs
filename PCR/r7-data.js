@@ -14,9 +14,9 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'RM Series — GCAI Mini Connector (R7 / Ion)',
             items: [
-              { pn: 'PMMN4128', desc: 'RM780 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP68, UL HazLoc, 2 prog buttons + emergency, intelligent audio', checks: {impres: 1, ip68: 1, ul: 1, intel: 1, ion_fw: 0, bt: 0, fulldx: 0} },
-              { pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio — requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 1, ion_fw: 1, bt: 0, fulldx: 0} },
-              { pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button — requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 0, ion_fw: 1, bt: 0, fulldx: 0} },
+              { pn: 'PMMN4128', desc: 'RM780 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP68, UL HazLoc, 2 prog buttons + emergency, intelligent audio', checks: {impres: 1, ip68: 1, ul: 1, intel: 1, ains: 0, wwet: 1, smartsw: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio — requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 1, ains: 0, wwet: 1, smartsw: 0, ion_fw: 1, bt: 0, fulldx: 0} },
+              { pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button — requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 0, ains: 0, wwet: 1, smartsw: 0, ion_fw: 1, bt: 0, fulldx: 0} },
             ]
           },
           {
@@ -373,8 +373,8 @@ cables: {
           {
             title: 'RM Series — New GCAI Mini Connector',
             items: [
-              { pn: 'PMMN4170', desc: 'RM560 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP67, UL HazLoc, AI-trained suppression, intelligent audio, emergency button, prog button', checks: {impres: 1, ip68: 0, ul: 1, intel: 1, ion_fw: 0, bt: 0, fulldx: 0} },
-              { pn: 'PMMN4171', desc: 'RM530 IMPRES Windporting RSM, Small, Work-When-Wet', note: 'IP67, UL HazLoc, AI-trained suppression, intelligent audio, emergency button', checks: {impres: 1, ip68: 0, ul: 1, intel: 1, ion_fw: 0, bt: 0, fulldx: 0} },
+              { pn: 'PMMN4170', desc: 'RM560 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP67, UL HazLoc, AI-trained suppression, intelligent audio, emergency button, prog button', checks: {impres: 1, ip68: 0, ul: 1, intel: 1, ains: 1, wwet: 1, smartsw: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { pn: 'PMMN4171', desc: 'RM530 IMPRES Windporting RSM, Small, Work-When-Wet', note: 'IP67, UL HazLoc, AI-trained suppression, intelligent audio, emergency button', checks: {impres: 1, ip68: 0, ul: 1, intel: 1, ains: 1, wwet: 1, smartsw: 0, ion_fw: 0, bt: 0, fulldx: 0} },
             ]
           },
           {
@@ -737,8 +737,8 @@ cables: {
             title: 'RM Series — GCAI Mini Connector (R7 / Ion)',
             items: [
               { pn: 'PMMN4128', desc: 'RM780 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP68, UL HazLoc, 2 prog buttons + emergency, intelligent audio, full duplex telephony with Ion', checks: {impres: 1, ip68: 1, ul: 1, intel: 1, ion_fw: 0, bt: 0, fulldx: 1} },
-              { pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio — requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 1, ion_fw: 1, bt: 0, fulldx: 0} },
-              { pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button — requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 0, ion_fw: 1, bt: 0, fulldx: 0} },
+              { pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio — requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 1, ains: 0, wwet: 1, smartsw: 0, ion_fw: 1, bt: 0, fulldx: 0} },
+              { pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button — requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip68: 1, ul: 1, intel: 0, ains: 0, wwet: 1, smartsw: 0, ion_fw: 1, bt: 0, fulldx: 0} },
             ]
           },
           {
