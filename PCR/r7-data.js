@@ -866,9 +866,9 @@ cables: {
     {
       title: 'IMPRES 2 Li-Ion Batteries — Ion',
       items: [
-        { pn: 'PMNN4803', desc: 'IMPRES 2 Li-Ion 2820mAh IP68 Slim Battery', note: 'IP68, -20°C to +60°C, 114×69×16mm, 145g', checks: {impres: 1, mah: "2820", ip: "IP68", ul: 0, temp: "—"} },
-        { pn: 'PMNN4804', desc: 'IMPRES 2 Li-Ion 2900mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, -20°C to +60°C, 114×69×24mm, 171g', checks: {impres: 1, mah: "2900", ip: "IP68", ul: 1, temp: "—"} },
-        { pn: 'PMNN4805', desc: 'IMPRES 2 Li-Ion 4400mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, -20°C to +60°C, 114×69×27mm, 211g', checks: {impres: 1, mah: "4400", ip: "IP68", ul: 1, temp: "—"} },
+        { pn: 'PMNN4803', desc: 'IMPRES 2 Li-Ion 2820mAh IP68 Slim Battery', note: 'IP68, -20°C to +60°C, 114×69×16mm, 145g', checks: {impres: 1, mah: "2820", ip: "IP68", ul: 0, temp: "\u2014"} },
+        { pn: 'PMNN4804', desc: 'IMPRES 2 Li-Ion 2900mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, -20°C to +60°C, 114×69×24mm, 171g', checks: {impres: 1, mah: "2900", ip: "IP68", ul: 1, temp: "\u2014"} },
+        { pn: 'PMNN4805', desc: 'IMPRES 2 Li-Ion 4400mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, -20°C to +60°C, 114×69×27mm, 211g', checks: {impres: 1, mah: "4400", ip: "IP68", ul: 1, temp: "\u2014"} },
       ]
     }
   ]
