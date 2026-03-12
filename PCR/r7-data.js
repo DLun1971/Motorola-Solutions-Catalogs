@@ -148,7 +148,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "UL HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number","Description","NRR","IMPRES","IP Rated","UL HazLoc","InAud","AINS","Ambient","Noise Cancel","Ion FW Req"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -508,7 +508,7 @@ cables: {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "UL HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number","Description","NRR","IMPRES","IP Rated","UL HazLoc","InAud","AINS","Ambient","Noise Cancel","Ion FW Req"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -835,7 +835,7 @@ cables: {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "UL HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number","Description","NRR","IMPRES","IP Rated","UL HazLoc","InAud","AINS","Ambient","Noise Cancel","Ion FW Req"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -1011,7 +1011,7 @@ cables: {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "UL HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number","Description","NRR","IMPRES","IP Rated","UL HazLoc","InAud","AINS","Ambient","Noise Cancel","Ion FW Req"],
         label: 'Headsets',
         icon: '',
         sections: [
