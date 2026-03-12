@@ -233,7 +233,7 @@ const RADIOS_DATA = {'r7': {
             ]
           },
         ]
-      },,
+      },
       antennas: {
         label: 'Antennas',
         icon: '',
@@ -583,7 +583,7 @@ const RADIOS_DATA = {'r7': {
             ]
           },
         ]
-      },,
+      },
       antennas: {
         label: 'Antennas',
         icon: '',
@@ -833,7 +833,7 @@ const RADIOS_DATA = {'r7': {
             ]
           },
         ]
-      },,
+      },
       cables: {
         label: 'Cables & Programming',
         icon: '',
@@ -1028,7 +1028,7 @@ const RADIOS_DATA = {'r7': {
             ]
           },
         ]
-      },,
+      },
       antennas: {
         label: 'Antennas',
         icon: '',
