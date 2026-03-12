@@ -155,17 +155,17 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Heavy Duty Headsets — IMPRES (R7 & Ion)',
             items: [
-              { pn: 'PMLN8085', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc, PTT on ear cup', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
-              { pn: 'PMLN8086', desc: 'Heavy Duty Over-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc, PTT on ear cup', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
+              { pn: 'PMLN8085', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc, PTT on ear cup', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ains: 0, ambient: 0, ion_fw: 0, nrr: "24dB", nc: 1} },
+              { pn: 'PMLN8086', desc: 'Heavy Duty Over-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc, PTT on ear cup', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ains: 0, ambient: 0, ion_fw: 0, nrr: "24dB", nc: 1} },
             ]
           },
           {
             title: '3M Peltor CH-3 Series (R7 & Ion)',
             items: [
-              { pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
-              { pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
-              { pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector (hat not included)', note: '24dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
-              { pn: 'PMLN8297', desc: 'PTT Nexus Adapter (required for CH-3 headsets above)', note: 'Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "\u2014", nc: 0} },
+              { pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
+              { pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector (hat not included)', note: '24dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { pn: 'PMLN8297', desc: 'PTT Nexus Adapter (required for CH-3 headsets above)', note: 'Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "\u2014", nc: 0} },
             ]
           }
         ]
@@ -842,17 +842,17 @@ cables: {
           {
             title: 'Heavy Duty Headsets — IMPRES (R7 & Ion)',
             items: [
-              { pn: 'PMLN8085', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
-              { pn: 'PMLN8086', desc: 'Heavy Duty Over-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
+              { pn: 'PMLN8085', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ains: 0, ambient: 0, ion_fw: 0, nrr: "24dB", nc: 1} },
+              { pn: 'PMLN8086', desc: 'Heavy Duty Over-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc', checks: {impres: 1, ip: 1, ul: 1, intel: 1, ains: 0, ambient: 0, ion_fw: 0, nrr: "24dB", nc: 1} },
             ]
           },
           {
             title: '3M Peltor CH-3 Series (R7 & Ion)',
             items: [
-              { pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
-              { pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
-              { pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector (hat not included)', note: '24dB NRR, dual-ear — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
-              { pn: 'PMLN8297', desc: 'PTT Nexus Adapter (required for CH-3 headsets above)', note: 'Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ion_fw: 1, nrr: "\u2014", nc: 0} },
+              { pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
+              { pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector (hat not included)', note: '24dB NRR, dual-ear — requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { pn: 'PMLN8297', desc: 'PTT Nexus Adapter (required for CH-3 headsets above)', note: 'Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, ul: 0, intel: 0, ains: 0, ambient: 0, ion_fw: 1, nrr: "\u2014", nc: 0} },
             ]
           }
         ]
