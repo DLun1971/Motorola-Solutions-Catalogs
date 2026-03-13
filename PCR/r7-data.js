@@ -1,22 +1,4 @@
-          { title: 'R7 Carry Cases', items: [
-              { img: null, pn: 'PMLN8299', desc: 'Hard Leather Swivel Case, Display (R7)', note: 'Hard leather, 3" swivel, display model', checks: {style:'Case', material:'Hard Leather', belt_sz:'3"', swivel:1} },
-              { img: null, pn: 'PMLN8300', desc: 'Hard Leather Fixed Case, Display (R7)', note: 'Hard leather, 3" fixed, display model', checks: {style:'Case', material:'Hard Leather', belt_sz:'3"', swivel:0} },
-              { img: null, pn: 'PMLN8301', desc: 'Nylon Fixed Case, Display (R7)', note: 'Nylon, 3" fixed, display model', checks: {style:'Case', material:'Nylon', belt_sz:'3"', swivel:0} },
-              { img: null, pn: 'PMLN8302', desc: 'Hard Leather Swivel Case, Non-Display (R7)', note: 'Hard leather, 3" swivel, non-display model', checks: {style:'Case', material:'Hard Leather', belt_sz:'3"', swivel:1} },
-              { img: null, pn: 'PMLN8303', desc: 'Hard Leather Fixed Case, Non-Display (R7)', note: 'Hard leather, 3" fixed, non-display model', checks: {style:'Case', material:'Hard Leather', belt_sz:'3"', swivel:0} },
-              { img: null, pn: 'PMLN8304', desc: 'Nylon Fixed Case, Non-Display (R7)', note: 'Nylon, 3" fixed, non-display model', checks: {style:'Case', material:'Nylon', belt_sz:'3"', swivel:0} },
-          ] },
-          { title: 'Screen Protectors', items: [
-              { img: null, pn: 'AY000808A01', desc: 'Screen Protector for R7 (Pack)', note: 'R7 screen protector variant 1', checks: {style:'Screen Protector', material:'', belt_sz:'', swivel:0} },
-              { img: null, pn: 'AY000808A02', desc: 'Screen Protector for R7 (Pack)', note: 'R7 screen protector variant 2', checks: {style:'Screen Protector', material:'', belt_sz:'', swivel:0} },
-              { img: null, pn: 'AY000808A03', desc: 'Screen Protector for R7 (Pack)', note: 'R7 screen protector variant 3', checks: {style:'Screen Protector', material:'', belt_sz:'', swivel:0} },
-          ] },
-          { title: 'Replacement Belt Loops & Misc', items: [
-              { img: null, pn: 'HLN6602', desc: 'Replacement 2.5" Swivel Belt Loop', note: 'Universal swivel belt loop replacement', checks: {style:'Belt Loop', material:'', belt_sz:'2.5"', swivel:1} },
-              { img: null, pn: 'PMLN6074', desc: 'Replacement 3" Fixed Belt Loop', note: 'Universal fixed belt loop replacement', checks: {style:'Belt Loop', material:'', belt_sz:'3"', swivel:0} },
-              { img: null, pn: 'PMHN4429', desc: 'Universal Radio Carrying Strap', note: 'Universal carrying strap', checks: {style:'Strap', material:'Nylon', belt_sz:'', swivel:0} },
-          ] },
-/* MOTOTRBO R7, Ion, R5, R7Ex Ã¢ÂÂ Product Data Ã¢ÂÂ r7-data.js */
+/* MOTOTRBO R7, Ion, R5, R7Ex ÃÂ¢ÃÂÃÂ Product Data ÃÂ¢ÃÂÃÂ r7-data.js */
 
 const RADIOS_DATA = {'r7': {
     name: 'MOTOTRBO R7',
@@ -30,18 +12,18 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'RM Series Ã¢ÂÂ GCAI Mini Connector (R7 / Ion)',
+            title: 'RM Series ÃÂ¢ÃÂÃÂ GCAI Mini Connector (R7 / Ion)',
             items: [
               { img: null, pn: 'PMMN4128', desc: 'RM780 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP68, UL HazLoc, 2 prog buttons + emergency, intelligent audio', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio Ã¢ÂÂ requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 1, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button Ã¢ÂÂ requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 1, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio ÃÂ¢ÃÂÃÂ requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 1, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button ÃÂ¢ÃÂÃÂ requires Ion firmware M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 1, bt: 0, fulldx: 0} },
             ]
           },
           {
-            title: 'NS750 Series Ã¢ÂÂ Omni-Directional RSM (R7)',
+            title: 'NS750 Series ÃÂ¢ÃÂÃÂ Omni-Directional RSM (R7)',
             items: [
-              { img: null, pn: 'PMMN4150', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Long Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet Ã¢ÂÂ EMEA only', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMMN4151', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Short Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet Ã¢ÂÂ EMEA only', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMMN4150', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Long Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet ÃÂ¢ÃÂÃÂ EMEA only', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMMN4151', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Short Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet ÃÂ¢ÃÂÃÂ EMEA only', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'PMMN4150_BLK', desc: 'NS750 IMPRES Omni-Directional RSM, Black, Long Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'PMMN4151_BLK', desc: 'NS750 IMPRES Omni-Directional RSM, Black, Short Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
             ]
@@ -60,20 +42,20 @@ const RADIOS_DATA = {'r7': {
               { img: null, pn: 'PMLN8122', desc: 'Replacement Dust Cover (10/pack)', note: 'For PMMN4128, PMMN4140', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'PMLN8253', desc: 'Replacement Dust Cover (10/pack)', note: 'For PMMN4131', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: '0104068J78', desc: 'Replacement Swivel Clip', note: 'For NS750 (PMMN4150/4151)', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMLN8466', desc: 'NS750 Color ID Labels Ã¢ÂÂ Red (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMLN8468', desc: 'NS750 Color ID Labels Ã¢ÂÂ Yellow (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMLN8465', desc: 'NS750 Color ID Labels Ã¢ÂÂ Blue (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMLN8469', desc: 'NS750 Color ID Labels Ã¢ÂÂ Silver (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMLN8464', desc: 'NS750 Color ID Labels Ã¢ÂÂ Green (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMLN8523', desc: 'NS750 Color ID Labels Ã¢ÂÂ Orange (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMLN8466', desc: 'NS750 Color ID Labels ÃÂ¢ÃÂÃÂ Red (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMLN8468', desc: 'NS750 Color ID Labels ÃÂ¢ÃÂÃÂ Yellow (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMLN8465', desc: 'NS750 Color ID Labels ÃÂ¢ÃÂÃÂ Blue (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMLN8469', desc: 'NS750 Color ID Labels ÃÂ¢ÃÂÃÂ Silver (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMLN8464', desc: 'NS750 Color ID Labels ÃÂ¢ÃÂÃÂ Green (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMLN8523', desc: 'NS750 Color ID Labels ÃÂ¢ÃÂÃÂ Orange (10/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
             ]
           },
           {
             title: 'NS750 Secondary Audio (Nexus Connector)',
             items: [
               { img: null, pn: 'PMLN7188', desc: 'Earpiece with Translucent Tube and Eartip', note: '3.5mm jack, transmit only, UL HazLoc', checks: {impres: 0, ip: 0, hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'GMMN4585', desc: 'Savox HC-1 Helmet Headset Ã¢ÂÂ Bone Mic, Single Speaker', note: 'Nexus connector, transmit & receive', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'GMMN4584', desc: 'Savox HC-2 Helmet Headset Ã¢ÂÂ Bone Mic, Dual Speaker', note: 'Nexus connector, transmit & receive', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'GMMN4585', desc: 'Savox HC-1 Helmet Headset ÃÂ¢ÃÂÃÂ Bone Mic, Single Speaker', note: 'Nexus connector, transmit & receive', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'GMMN4584', desc: 'Savox HC-2 Helmet Headset ÃÂ¢ÃÂÃÂ Bone Mic, Dual Speaker', note: 'Nexus connector, transmit & receive', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'PMLN8265', desc: 'Over-The-Head Headset with Nexus Connector', note: 'Transmit & receive', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'PMLN8266', desc: 'Backend Headset with Nexus Connector', note: 'Transmit & receive', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'PMLN8267', desc: 'Hard Hat Attached Headset with Nexus Connector', note: 'Transmit & receive', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
@@ -103,7 +85,7 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'WP300 Wireless Bluetooth PTT Pod',
             items: [
-              { img: null, pn: 'PMLN8298', desc: 'WP300 Wireless Bluetooth PTT Pod', note: 'IP67, 18hr battery, NFC, 30m range, emergency button Ã¢ÂÂ requires fw R02.25.02.1000+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 1, fw_req: "r02.25.02.1000"} },
+              { img: null, pn: 'PMLN8298', desc: 'WP300 Wireless Bluetooth PTT Pod', note: 'IP67, 18hr battery, NFC, 30m range, emergency button ÃÂ¢ÃÂÃÂ requires fw R02.25.02.1000+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 1, fw_req: "r02.25.02.1000"} },
               { img: null, pn: 'PMLN8401', desc: 'WP300 Wireless Bluetooth PTT Pod with Surveillance Earpiece', note: 'IP67, 18hr battery, NFC, 30m range', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 0, fw_req: "\u2014"} },
             ]
           },
@@ -134,17 +116,17 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'IMPRES Surveillance Kits Ã¢ÂÂ R7 & Ion (Extra Loud)',
+            title: 'IMPRES Surveillance Kits ÃÂ¢ÃÂÃÂ R7 & Ion (Extra Loud)',
             items: [
               { img: null, pn: 'PMLN8341', desc: 'IMPRES 1-Wire Surveillance Kit, Translucent Tube, Extra Loud, Black', note: 'Intelligent audio, full duplex with Ion, UL HazLoc', checks: {impres: 1, hazloc: 'UL', intel: 1, fulldx: 1, ion_fw: 0, wires: "1"} },
               { img: null, pn: 'PMLN8342', desc: 'IMPRES 2-Wire Surveillance Kit, Translucent Tube, Extra Loud, Black', note: 'Intelligent audio, full duplex with Ion, UL HazLoc', checks: {impres: 1, hazloc: 'UL', intel: 1, fulldx: 1, ion_fw: 0, wires: "2"} },
               { img: null, pn: 'PMLN8343', desc: 'IMPRES 3-Wire Surveillance Kit, Translucent Tube, Extra Loud, Black', note: 'Intelligent audio, full duplex with Ion, UL HazLoc', checks: {impres: 1, hazloc: 'UL', intel: 1, fulldx: 1, ion_fw: 0, wires: "3"} },
-              { img: null, pn: 'PMLN8295', desc: 'IMPRES 2-Wire Swivel Earhook with Removable Eartip, Loud, Black', note: 'Intelligent audio, full duplex with Ion Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "2"} },
-              { img: null, pn: 'PMLN8337', desc: 'IMPRES 1-Wire Single Earbud with Removable Earhook, Loud, Black', note: 'Intelligent audio, full duplex with Ion Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "1"} },
+              { img: null, pn: 'PMLN8295', desc: 'IMPRES 2-Wire Swivel Earhook with Removable Eartip, Loud, Black', note: 'Intelligent audio, full duplex with Ion ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "2"} },
+              { img: null, pn: 'PMLN8337', desc: 'IMPRES 1-Wire Single Earbud with Removable Earhook, Loud, Black', note: 'Intelligent audio, full duplex with Ion ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "1"} },
             ]
           },
           {
-            title: 'IMPRES Surveillance Kits Ã¢ÂÂ R7 Only (Loud)',
+            title: 'IMPRES Surveillance Kits ÃÂ¢ÃÂÃÂ R7 Only (Loud)',
             items: [
               { img: null, pn: 'PMLN8644', desc: 'IMPRES 1-Wire Surveillance Kit, Translucent Tube, Loud, Black', note: 'Intelligent audio, R7 only', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 0, ion_fw: 0, wires: "1"} },
               { img: null, pn: 'PMLN8645', desc: 'IMPRES 2-Wire Surveillance Kit, Translucent Tube, Loud, Black', note: 'Intelligent audio, R7 only', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 0, ion_fw: 0, wires: "2"} },
@@ -155,9 +137,9 @@ const RADIOS_DATA = {'r7': {
             title: 'Surveillance Replacement Parts',
             items: [
               { img: null, pn: 'PMLN8092', desc: 'Replacement Quick-Disconnect Translucent Tube with Rubber Eartip', note: 'Compatible with PMLN8120/8341/8342/8343', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'PMLN8068', desc: 'Replacement Rubber Eartip, Small (5/pack)', note: 'Black rubber Ã¢ÂÂ for PMLN8295', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'PMLN8069', desc: 'Replacement Rubber Eartip, Medium (5/pack)', note: 'Black rubber Ã¢ÂÂ for PMLN8295', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'PMLN8070', desc: 'Replacement Rubber Eartip, Large (5/pack)', note: 'Black rubber Ã¢ÂÂ for PMLN8295', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'PMLN8068', desc: 'Replacement Rubber Eartip, Small (5/pack)', note: 'Black rubber ÃÂ¢ÃÂÃÂ for PMLN8295', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'PMLN8069', desc: 'Replacement Rubber Eartip, Medium (5/pack)', note: 'Black rubber ÃÂ¢ÃÂÃÂ for PMLN8295', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'PMLN8070', desc: 'Replacement Rubber Eartip, Large (5/pack)', note: 'Black rubber ÃÂ¢ÃÂÃÂ for PMLN8295', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
               { img: null, pn: 'PMLN8363', desc: 'Replacement Rubber Sleeve, Small (25/pack)', note: 'For PMLN8337', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
               { img: null, pn: 'PMLN8364', desc: 'Replacement Rubber Sleeve, Medium (25/pack)', note: 'For PMLN8337', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
               { img: null, pn: 'PMLN8365', desc: 'Replacement Rubber Sleeve, Large (25/pack)', note: 'For PMLN8337', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
@@ -171,7 +153,7 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'Heavy Duty Headsets Ã¢ÂÂ IMPRES (R7 & Ion)',
+            title: 'Heavy Duty Headsets ÃÂ¢ÃÂÃÂ IMPRES (R7 & Ion)',
             items: [
               { img: null, pn: 'PMLN8085', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc, PTT on ear cup', checks: {impres: 1, ip: 1, hazloc: 'UL', intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
               { img: null, pn: 'PMLN8086', desc: 'Heavy Duty Over-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc, PTT on ear cup', checks: {impres: 1, ip: 1, hazloc: 'UL', intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
@@ -180,9 +162,9 @@ const RADIOS_DATA = {'r7': {
           {
             title: '3M Peltor CH-3 Series (R7 & Ion)',
             items: [
-              { img: null, pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic Ã¢ÂÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
-              { img: null, pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic Ã¢ÂÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
-              { img: null, pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector (hat not included)', note: '24dB NRR, dual-ear, boom mic Ã¢ÂÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { img: null, pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
+              { img: null, pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { img: null, pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector (hat not included)', note: '24dB NRR, dual-ear, boom mic ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
               { img: null, pn: 'PMLN8297', desc: 'PTT Nexus Adapter (required for CH-3 headsets above)', note: 'Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "\u2014", nc: 0} },
             ]
           }
@@ -194,12 +176,12 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'IMPRES Li-Ion Batteries Ã¢ÂÂ R7',
+            title: 'IMPRES Li-Ion Batteries ÃÂ¢ÃÂÃÂ R7',
             items: [
-              { img: null, pn: 'PMNN4807', desc: 'IMPRES Li-Ion 2200mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 118g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4809', desc: 'IMPRES Li-Ion 2850mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 135g', checks: {impres: 1, chem: 'Li-Ion', mah: "2850", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4810', desc: 'IMPRES Li-Ion 3200mAh IP68 TIA4950 Battery', note: 'IP66/IP68, UL HazLoc, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4603', desc: 'IMPRES Li-Ion 3200mAh IP68 Battery', note: 'IP66/IP68, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂ°C"} },
+              { img: null, pn: 'PMNN4807', desc: 'IMPRES Li-Ion 2200mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 118g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4809', desc: 'IMPRES Li-Ion 2850mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 135g', checks: {impres: 1, chem: 'Li-Ion', mah: "2850", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4810', desc: 'IMPRES Li-Ion 3200mAh IP68 TIA4950 Battery', note: 'IP66/IP68, UL HazLoc, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4603', desc: 'IMPRES Li-Ion 3200mAh IP68 Battery', note: 'IP66/IP68, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
             ]
           }
         ]
@@ -274,15 +256,38 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Carry Straps & Cases',
             items: [
-              { img: null, pn: 'HLN9985',  desc: 'Waterproof Bag with Large Strap', note: 'Securely carries MOTOTRBO two-way radios', checks: { style:'Bag', material:'Nylon', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: 'Nylon', checks: { style:'Strap', material:'Nylon', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap Ã¢ÂÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6488',  desc: 'Anti-Sway Strap for Leather Radio Straps', note: 'Accessory for RLN6486/RLN6487', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
+              { img: null, pn: 'HLN9985',  desc: 'Waterproof Bag with Large Strap', note: 'Securely carries MOTOTRBO two-way radios', checks: { style:'Bag', material:'Nylon', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: 'Nylon', checks: { style:'Strap', material:'Nylon', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap ÃÂ¢ÃÂÃÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6488',  desc: 'Anti-Sway Strap for Leather Radio Straps', note: 'Accessory for RLN6486/RLN6487', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
             ]
           },
         ]
       },
+          {
+            title: 'R7 Hard Cases',
+            items: [
+              { img: null, pn: 'PMLN8299', desc: 'Hard Carry Case, Small', note: 'R7 hard case', checks: { style:'Case', material:'Hard', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'PMLN8300', desc: 'Hard Carry Case, Medium', note: 'R7 hard case', checks: { style:'Case', material:'Hard', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'PMLN8301', desc: 'Hard Carry Case, Large', note: 'R7 hard case', checks: { style:'Case', material:'Hard', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'PMLN8302', desc: 'Hard Carry Case with Display, Small', note: 'R7 hard case, display model', checks: { style:'Case', material:'Hard', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'PMLN8303', desc: 'Hard Carry Case with Display, Medium', note: 'R7 hard case, display model', checks: { style:'Case', material:'Hard', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'PMLN8304', desc: 'Hard Carry Case with Display, Large', note: 'R7 hard case, display model', checks: { style:'Case', material:'Hard', belt_sz:'—', swivel:0 } },
+            ]
+          },
+          {
+            title: 'Screen Protectors & Misc Carry',
+            items: [
+              { img: null, pn: 'AY000808A01', desc: 'Screen Protector (3/pack)', note: 'R7 screen protector', checks: { style:'Accessory', material:'—', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'AY000808A02', desc: 'Screen Protector with Wipes (3/pack)', note: 'R7 screen protector with cleaning wipes', checks: { style:'Accessory', material:'—', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'AY000808A03', desc: 'Privacy Screen Protector (3/pack)', note: 'R7 privacy screen protector', checks: { style:'Accessory', material:'—', belt_sz:'—', swivel:0 } },
+              { img: null, pn: 'HLN6602', desc: 'Replacement Belt Loop, 2-inch', note: 'Replacement belt loop for carry solutions', checks: { style:'Accessory', material:'Nylon', belt_sz:'2"', swivel:0 } },
+              { img: null, pn: 'PMLN6074', desc: 'Replacement Belt Loop, 2.5-inch', note: 'Replacement belt loop for carry solutions', checks: { style:'Accessory', material:'Nylon', belt_sz:'2.5"', swivel:0 } },
+              { img: null, pn: 'PMHN4429', desc: 'Replacement Swivel, Spring Action', note: 'Replacement spring-action swivel for holsters', checks: { style:'Accessory', material:'Metal', belt_sz:'—', swivel:1 } },
+            ]
+          },
+
       antennas: {
         cols: ["Part Number", "Description", "Band", "Freq", "Ant Type", "Length"],
         label: 'Antennas',
@@ -322,11 +327,11 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Antenna Accessories',
             items: [
-              { img: null, pn: '32012144001', desc: 'Antenna ID Bands Ã¢ÂÂ Gray (10/pack)', note: '' },
-              { img: null, pn: '32012144002', desc: 'Antenna ID Bands Ã¢ÂÂ Yellow (10/pack)', note: '' },
-              { img: null, pn: '32012144003', desc: 'Antenna ID Bands Ã¢ÂÂ Green (10/pack)', note: '' },
-              { img: null, pn: '32012144004', desc: 'Antenna ID Bands Ã¢ÂÂ Blue (10/pack)', note: '' },
-              { img: null, pn: '32012144005', desc: 'Antenna ID Bands Ã¢ÂÂ Purple (10/pack)', note: '' },
+              { img: null, pn: '32012144001', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Gray (10/pack)', note: '' },
+              { img: null, pn: '32012144002', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Yellow (10/pack)', note: '' },
+              { img: null, pn: '32012144003', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Green (10/pack)', note: '' },
+              { img: null, pn: '32012144004', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Blue (10/pack)', note: '' },
+              { img: null, pn: '32012144005', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Purple (10/pack)', note: '' },
             ]
           }
         ]
@@ -369,7 +374,7 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'RM Series Ã¢ÂÂ New GCAI Mini Connector',
+            title: 'RM Series ÃÂ¢ÃÂÃÂ New GCAI Mini Connector',
             items: [
               { img: null, pn: 'PMMN4170', desc: 'RM560 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP67, UL HazLoc, AI-trained suppression, intelligent audio, emergency button, prog button', checks: {impres: 1, ip: 'IP67', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'PMMN4171', desc: 'RM530 IMPRES Windporting RSM, Small, Work-When-Wet', note: 'IP67, UL HazLoc, AI-trained suppression, intelligent audio, emergency button', checks: {impres: 1, ip: 'IP67', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 0} },
@@ -416,8 +421,8 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'WP300 Wireless Bluetooth PTT Pod',
             items: [
-              { img: null, pn: 'PMLN8298', desc: 'WP300 Wireless Bluetooth PTT Pod', note: 'IP67, 18hr battery, NFC, 30m range, emergency button Ã¢ÂÂ requires R5 fw R02.25.02.1000+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 1, fw_req: "r02.25.02.1000"} },
-              { img: null, pn: 'PMLN8401', desc: 'WP300 Wireless Bluetooth PTT Pod with Surveillance Earpiece', note: 'IP67, 18hr battery, NFC, 30m range Ã¢ÂÂ requires R5 fw R02.25.02.1000+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 0, fw_req: "r02.25.02.1000"} },
+              { img: null, pn: 'PMLN8298', desc: 'WP300 Wireless Bluetooth PTT Pod', note: 'IP67, 18hr battery, NFC, 30m range, emergency button ÃÂ¢ÃÂÃÂ requires R5 fw R02.25.02.1000+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 1, fw_req: "r02.25.02.1000"} },
+              { img: null, pn: 'PMLN8401', desc: 'WP300 Wireless Bluetooth PTT Pod with Surveillance Earpiece', note: 'IP67, 18hr battery, NFC, 30m range ÃÂ¢ÃÂÃÂ requires R5 fw R02.25.02.1000+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 0, fw_req: "r02.25.02.1000"} },
             ]
           },
           {
@@ -478,12 +483,12 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Custom Fit Earpieces',
             items: [
-              { img: null, pn: 'RLN4760', desc: 'Small Custom Earpiece Ã¢ÂÂ Right Ear', note: 'For use with RLN6242', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'RLN4761', desc: 'Medium Custom Earpiece Ã¢ÂÂ Right Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'RLN4762', desc: 'Large Custom Earpiece Ã¢ÂÂ Right Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'RLN4763', desc: 'Small Custom Earpiece Ã¢ÂÂ Left Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'RLN4764', desc: 'Medium Custom Earpiece Ã¢ÂÂ Left Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
-              { img: null, pn: 'RLN4765', desc: 'Large Custom Earpiece Ã¢ÂÂ Left Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'RLN4760', desc: 'Small Custom Earpiece ÃÂ¢ÃÂÃÂ Right Ear', note: 'For use with RLN6242', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'RLN4761', desc: 'Medium Custom Earpiece ÃÂ¢ÃÂÃÂ Right Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'RLN4762', desc: 'Large Custom Earpiece ÃÂ¢ÃÂÃÂ Right Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'RLN4763', desc: 'Small Custom Earpiece ÃÂ¢ÃÂÃÂ Left Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'RLN4764', desc: 'Medium Custom Earpiece ÃÂ¢ÃÂÃÂ Left Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
+              { img: null, pn: 'RLN4765', desc: 'Large Custom Earpiece ÃÂ¢ÃÂÃÂ Left Ear', note: '', checks: {impres: 0, hazloc: 0, intel: 0, fulldx: 0, ion_fw: 0, wires: "\u2014"} },
             ]
           },
           {
@@ -511,7 +516,7 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'Heavy Duty Headsets Ã¢ÂÂ IMPRES',
+            title: 'Heavy Duty Headsets ÃÂ¢ÃÂÃÂ IMPRES',
             items: [
               { img: null, pn: 'PMLN6760', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic', note: '24dB NRR, dual-muff, IMPRES intelligent audio, PTT on ear cup', checks: {impres: 1, ip: 0, hazloc: 0, intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
               { img: null, pn: 'PMLN6763', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc', checks: {impres: 1, ip: 0, hazloc: 'UL', intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
@@ -530,9 +535,9 @@ const RADIOS_DATA = {'r7': {
           {
             title: '3M Peltor Headsets',
             items: [
-              { img: null, pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic Ã¢ÂÂ requires PTT adapter PMLN8297', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, nrr: "26dB", nc: 0} },
-              { img: null, pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic Ã¢ÂÂ requires PTT adapter PMLN8297', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, nrr: "24dB", nc: 0} },
-              { img: null, pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector', note: '24dB NRR, dual-ear Ã¢ÂÂ requires PTT adapter PMLN8297', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, nrr: "24dB", nc: 0} },
+              { img: null, pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR, dual-ear, boom mic ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, nrr: "26dB", nc: 0} },
+              { img: null, pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR, dual-ear, boom mic ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, nrr: "24dB", nc: 0} },
+              { img: null, pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector', note: '24dB NRR, dual-ear ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, nrr: "24dB", nc: 0} },
               { img: null, pn: 'PMLN8297', desc: 'PTT Nexus Adapter (required for CH-3 headsets)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, nrr: "\u2014", nc: 0} },
             ]
           }
@@ -544,12 +549,12 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'IMPRES Li-Ion Batteries Ã¢ÂÂ R5',
+            title: 'IMPRES Li-Ion Batteries ÃÂ¢ÃÂÃÂ R5',
             items: [
-              { img: null, pn: 'PMNN4878', desc: 'Li-Ion IP67 2400mAh Battery', note: 'IP67, 122x55x24mm, 144g Ã¢ÂÂ EMEA and APAC only', checks: {impres: 0, chem: 'Li-Ion', mah: "2400", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4888', desc: 'IMPRES Slim Li-Ion IP67 2200mAh Battery', note: 'IP67, 122x55x18mm, 120g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4889', desc: 'IMPRES High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, 122x55x24mm, 148g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4890', desc: 'IMPRES UL High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, UL HazLoc, 122x55x24mm, 162g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 'UL', temp: "-20 to +60ÃÂ°C"} },
+              { img: null, pn: 'PMNN4878', desc: 'Li-Ion IP67 2400mAh Battery', note: 'IP67, 122x55x24mm, 144g ÃÂ¢ÃÂÃÂ EMEA and APAC only', checks: {impres: 0, chem: 'Li-Ion', mah: "2400", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4888', desc: 'IMPRES Slim Li-Ion IP67 2200mAh Battery', note: 'IP67, 122x55x18mm, 120g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4889', desc: 'IMPRES High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, 122x55x24mm, 148g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4890', desc: 'IMPRES UL High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, UL HazLoc, 122x55x24mm, 162g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
             ]
           }
         ]
@@ -560,7 +565,7 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           { title: 'IMPRES Single-Unit Chargers', items: [
-              { img: null, pn: 'PMPN4527', desc: 'IMPRES Single-Unit Charger Base Only', note: 'IMPRES, Li-Ion/NiMH', checks: {impres: 1, pockets: "1", voltage: "Ã¢ÂÂ", chem: "Li-Ion/NiMH"} },
+              { img: null, pn: 'PMPN4527', desc: 'IMPRES Single-Unit Charger Base Only', note: 'IMPRES, Li-Ion/NiMH', checks: {impres: 1, pockets: "1", voltage: "ÃÂ¢ÃÂÃÂ", chem: "Li-Ion/NiMH"} },
               { img: null, pn: 'PMPN4576', desc: 'IMPRES Single-Unit Charger, US/NA/TW Plug', note: 'IMPRES, Li-Ion/NiMH, 120VAC', checks: {impres: 1, pockets: "1", voltage: "120VAC", chem: "Li-Ion/NiMH"} },
               { img: null, pn: 'PMPN4577', desc: 'IMPRES Single-Unit Charger, EU Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", voltage: "240VAC", chem: "Li-Ion/NiMH"} },
               { img: null, pn: 'PMPN4572', desc: 'IMPRES Single-Unit Charger, UK/HK Plug', note: 'IMPRES, Li-Ion/NiMH, 240VAC', checks: {impres: 1, pockets: "1", voltage: "240VAC", chem: "Li-Ion/NiMH"} },
@@ -571,8 +576,8 @@ const RADIOS_DATA = {'r7': {
               { img: null, pn: 'PMPN4582', desc: 'IMPRES Single-Unit Charger, India Plug', note: 'IMPRES, Li-Ion/NiMH, 100-240VAC', checks: {impres: 1, pockets: "1", voltage: "100-240VAC", chem: "Li-Ion/NiMH"} },
           ] },
           { title: 'Standard Single-Unit Chargers', items: [
-              { img: null, pn: 'NNTN8117', desc: 'Single-Unit Charger Base Only', note: 'Li-Ion/NiMH', checks: {impres: 0, pockets: "1", voltage: "Ã¢ÂÂ", chem: "Li-Ion/NiMH"} },
-              { img: null, pn: 'NNTN8117ASP01', desc: 'IMPRES Single-Unit Charger Base Only (alt)', note: '47x114x115mm, 1 pocket', checks: { impres:1, pockets:1, voltage:'—', chem:'Li-Ion / NiMH'} },
+              { img: null, pn: 'NNTN8117', desc: 'Single-Unit Charger Base Only', note: 'Li-Ion/NiMH', checks: {impres: 0, pockets: "1", voltage: "ÃÂ¢ÃÂÃÂ", chem: "Li-Ion/NiMH"} },
+              { img: null, pn: 'NNTN8117ASP01', desc: 'IMPRES Single-Unit Charger Base Only (alt)', note: '47x114x115mm, 1 pocket', checks: { impres:1, pockets:1, voltage:'â', chem:'Li-Ion / NiMH'} },
               { img: null, pn: 'NNTN8226', desc: 'Single-Unit Charger 1.25A, US/NA Plug', note: 'Li-Ion/NiMH, 115VAC', checks: {impres: 0, pockets: "1", voltage: "115VAC", chem: "Li-Ion/NiMH"} },
               { img: null, pn: 'NNTN8224', desc: 'Single-Unit Charger 1.25A, China Plug', note: 'Li-Ion/NiMH, 230VAC', checks: {impres: 0, pockets: "1", voltage: "230VAC", chem: "Li-Ion/NiMH"} },
               { img: null, pn: 'NNTN8273', desc: 'Single-Unit Charger, Switch-Mode 21W PSU, EU Plug', note: 'Li-Ion/NiMH, 240VAC', checks: {impres: 0, pockets: "1", voltage: "240VAC", chem: "Li-Ion/NiMH"} },
@@ -595,11 +600,11 @@ const RADIOS_DATA = {'r7': {
           ] },
           { title: 'Vehicular & Power Supply', items: [
               { img: null, pn: 'NNTN7616',    desc: 'IMPRES Vehicular Charger Kit', note: 'IMPRES, Li-Ion/NiMH, hard-wired to vehicle battery', checks: {impres: 1, pockets: "1", voltage: "12VDC", chem: "Li-Ion/NiMH"} },
-              { img: null, pn: 'PS000577A01', desc: 'Power Supply Adaptor 14.5V/1.15A, US/NA/TW/JP Plug', note: '120VAC', checks: {impres: 0, pockets: "1", voltage: "120VAC", chem: "Ã¢ÂÂ"} },
-              { img: null, pn: 'PS000576A21', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, US/NA Plug', note: '120VAC', checks: {impres: 0, pockets: "1", voltage: "120VAC", chem: "Ã¢ÂÂ"} },
-              { img: null, pn: 'PS000576A02', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, EU Plug', note: '100-240VAC', checks: {impres: 0, pockets: "1", voltage: "100-240VAC", chem: "Ã¢ÂÂ"} },
-              { img: null, pn: 'PS000576A03', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, UK/HK Plug', note: '100-240VAC', checks: {impres: 0, pockets: "1", voltage: "100-240VAC", chem: "Ã¢ÂÂ"} },
-              { img: null, pn: 'PS000576A04', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, AUS/NZ Plug', note: '100-240VAC', checks: {impres: 0, pockets: "1", voltage: "100-240VAC", chem: "Ã¢ÂÂ"} },
+              { img: null, pn: 'PS000577A01', desc: 'Power Supply Adaptor 14.5V/1.15A, US/NA/TW/JP Plug', note: '120VAC', checks: {impres: 0, pockets: "1", voltage: "120VAC", chem: "ÃÂ¢ÃÂÃÂ"} },
+              { img: null, pn: 'PS000576A21', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, US/NA Plug', note: '120VAC', checks: {impres: 0, pockets: "1", voltage: "120VAC", chem: "ÃÂ¢ÃÂÃÂ"} },
+              { img: null, pn: 'PS000576A02', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, EU Plug', note: '100-240VAC', checks: {impres: 0, pockets: "1", voltage: "100-240VAC", chem: "ÃÂ¢ÃÂÃÂ"} },
+              { img: null, pn: 'PS000576A03', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, UK/HK Plug', note: '100-240VAC', checks: {impres: 0, pockets: "1", voltage: "100-240VAC", chem: "ÃÂ¢ÃÂÃÂ"} },
+              { img: null, pn: 'PS000576A04', desc: 'Power Supply Adaptor Fixed Blade 14.5V/1.15A, AUS/NZ Plug', note: '100-240VAC', checks: {impres: 0, pockets: "1", voltage: "100-240VAC", chem: "ÃÂ¢ÃÂÃÂ"} },
               { img: null, pn: 'PS000576A05', desc: 'Power Supply Adaptor, ARG Plug (R5)', note: 'AC/DC Fixed Blade, 14.5V/1.15A', checks: {impres: 0, pockets: "", voltage: "N/A", chem: ""} },
               { img: null, pn: 'PS000576A06', desc: 'Power Supply Adaptor, CH Plug (R5)', note: 'AC/DC Fixed Blade, 14.5V/1.15A', checks: {impres: 0, pockets: "", voltage: "N/A", chem: ""} },
               { img: null, pn: 'PS000576A07', desc: 'Power Supply Adaptor, KOR Plug (R5)', note: 'AC/DC Fixed Blade, 14.5V/1.15A', checks: {impres: 0, pockets: "", voltage: "N/A", chem: ""} },
@@ -641,11 +646,11 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Carry Straps & Bags',
             items: [
-              { img: null, pn: 'HLN9985',  desc: 'Waterproof Bag with Large Strap', note: 'Securely carries MOTOTRBO two-way radios', checks: { style:'Bag', material:'Nylon', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: '', checks: { style:'Strap', material:'Nylon', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap Ã¢ÂÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6488',  desc: 'Anti-Sway Strap for Leather Radio Straps', note: 'Accessory for RLN6486/RLN6487', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
+              { img: null, pn: 'HLN9985',  desc: 'Waterproof Bag with Large Strap', note: 'Securely carries MOTOTRBO two-way radios', checks: { style:'Bag', material:'Nylon', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: '', checks: { style:'Strap', material:'Nylon', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap ÃÂ¢ÃÂÃÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6488',  desc: 'Anti-Sway Strap for Leather Radio Straps', note: 'Accessory for RLN6486/RLN6487', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
             ]
           },
         ]
@@ -680,11 +685,11 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Antenna Accessories',
             items: [
-              { img: null, pn: '32012144001', desc: 'Antenna ID Bands Ã¢ÂÂ Gray (10/pack)', note: '' },
-              { img: null, pn: '32012144002', desc: 'Antenna ID Bands Ã¢ÂÂ Yellow (10/pack)', note: '' },
-              { img: null, pn: '32012144003', desc: 'Antenna ID Bands Ã¢ÂÂ Green (10/pack)', note: '' },
-              { img: null, pn: '32012144004', desc: 'Antenna ID Bands Ã¢ÂÂ Blue (10/pack)', note: '' },
-              { img: null, pn: '32012144005', desc: 'Antenna ID Bands Ã¢ÂÂ Purple (10/pack)', note: '' },
+              { img: null, pn: '32012144001', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Gray (10/pack)', note: '' },
+              { img: null, pn: '32012144002', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Yellow (10/pack)', note: '' },
+              { img: null, pn: '32012144003', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Green (10/pack)', note: '' },
+              { img: null, pn: '32012144004', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Blue (10/pack)', note: '' },
+              { img: null, pn: '32012144005', desc: 'Antenna ID Bands ÃÂ¢ÃÂÃÂ Purple (10/pack)', note: '' },
             ]
           }
         ]
@@ -726,17 +731,17 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'RM Series Ã¢ÂÂ GCAI Mini Connector (R7 / Ion)',
+            title: 'RM Series ÃÂ¢ÃÂÃÂ GCAI Mini Connector (R7 / Ion)',
             items: [
               { img: null, pn: 'PMMN4128', desc: 'RM780 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP68, UL HazLoc, 2 prog buttons + emergency, intelligent audio, full duplex telephony with Ion', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 1} },
-              { img: null, pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 1, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 1, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 1, bt: 0, fulldx: 0} },
+              { img: null, pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 1, bt: 0, fulldx: 0} },
             ]
           },
           {
             title: 'Wireless RSM',
             items: [
-              { img: null, pn: 'PMMN4127', desc: 'WM500 Wireless Remote Speaker Microphone', note: 'Operations Critical BT, 18hr, IP67, omni windporting mic, full duplex with Ion Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 'IP67', hazloc: 0, intel: 0, ion_fw: 1, bt: 1, fulldx: 1} },
+              { img: null, pn: 'PMMN4127', desc: 'WM500 Wireless Remote Speaker Microphone', note: 'Operations Critical BT, 18hr, IP67, omni windporting mic, full duplex with Ion ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 'IP67', hazloc: 0, intel: 0, ion_fw: 1, bt: 1, fulldx: 1} },
             ]
           },
           {
@@ -765,15 +770,15 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Operations Critical Wireless',
             items: [
-              { img: null, pn: 'PMMN4127', desc: 'WM500 Wireless Remote Speaker Microphone', note: 'Full duplex telephony with Ion, 18hr, IP67 Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {ip: 1, bt: 0, fulldx: 1, nfc: 0, emg: 0, fw_req: "m"} },
+              { img: null, pn: 'PMMN4127', desc: 'WM500 Wireless Remote Speaker Microphone', note: 'Full duplex telephony with Ion, 18hr, IP67 ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {ip: 1, bt: 0, fulldx: 1, nfc: 0, emg: 0, fw_req: "m"} },
               { img: null, pn: 'PMLN8123', desc: 'Operations Critical Wireless BT Earpiece with PTT', note: 'Over-ear swivel, boom mic, 8hr battery, full duplex telephony with Ion, standard pairing, 30ft', checks: {ip: 0, bt: 1, fulldx: 1, nfc: 0, emg: 0, fw_req: "\u2014"} },
             ]
           },
           {
             title: 'WP300 Wireless Bluetooth PTT Pod',
             items: [
-              { img: null, pn: 'PMLN8298', desc: 'WP300 Wireless Bluetooth PTT Pod', note: 'IP67, 18hr battery, NFC, 30m range, emergency button Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 1, fw_req: "m"} },
-              { img: null, pn: 'PMLN8401', desc: 'WP300 Wireless Bluetooth PTT Pod with Surveillance Earpiece', note: 'IP67, 18hr battery, NFC, 30m range Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 0, fw_req: "m"} },
+              { img: null, pn: 'PMLN8298', desc: 'WP300 Wireless Bluetooth PTT Pod', note: 'IP67, 18hr battery, NFC, 30m range, emergency button ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 1, fw_req: "m"} },
+              { img: null, pn: 'PMLN8401', desc: 'WP300 Wireless Bluetooth PTT Pod with Surveillance Earpiece', note: 'IP67, 18hr battery, NFC, 30m range ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {ip: 1, bt: 1, fulldx: 0, nfc: 1, emg: 0, fw_req: "m"} },
             ]
           },
           {
@@ -803,13 +808,13 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'IMPRES Surveillance Kits Ã¢ÂÂ R7 & Ion (Extra Loud, Full Duplex)',
+            title: 'IMPRES Surveillance Kits ÃÂ¢ÃÂÃÂ R7 & Ion (Extra Loud, Full Duplex)',
             items: [
               { img: null, pn: 'PMLN8341', desc: 'IMPRES 1-Wire Surveillance Kit, Translucent Tube, Extra Loud, Black', note: 'Intelligent audio, full duplex telephony with Ion, UL HazLoc', checks: {impres: 1, hazloc: 'UL', intel: 1, fulldx: 1, ion_fw: 0, wires: "1"} },
               { img: null, pn: 'PMLN8342', desc: 'IMPRES 2-Wire Surveillance Kit, Translucent Tube, Extra Loud, Black', note: 'Intelligent audio, full duplex telephony with Ion, UL HazLoc', checks: {impres: 1, hazloc: 'UL', intel: 1, fulldx: 1, ion_fw: 0, wires: "2"} },
               { img: null, pn: 'PMLN8343', desc: 'IMPRES 3-Wire Surveillance Kit, Translucent Tube, Extra Loud, Black', note: 'Intelligent audio, full duplex telephony with Ion, UL HazLoc', checks: {impres: 1, hazloc: 'UL', intel: 1, fulldx: 1, ion_fw: 0, wires: "3"} },
-              { img: null, pn: 'PMLN8295', desc: 'IMPRES 2-Wire Swivel Earhook, Removable Eartip, Loud, Black', note: 'Intelligent audio, full duplex with Ion Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "2"} },
-              { img: null, pn: 'PMLN8337', desc: 'IMPRES 1-Wire Single Earbud, Removable Earhook, Loud, Black', note: 'Intelligent audio, full duplex with Ion Ã¢ÂÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "1"} },
+              { img: null, pn: 'PMLN8295', desc: 'IMPRES 2-Wire Swivel Earhook, Removable Eartip, Loud, Black', note: 'Intelligent audio, full duplex with Ion ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "2"} },
+              { img: null, pn: 'PMLN8337', desc: 'IMPRES 1-Wire Single Earbud, Removable Earhook, Loud, Black', note: 'Intelligent audio, full duplex with Ion ÃÂ¢ÃÂÃÂ requires Ion fw M-Ion.2022.03+', checks: {impres: 1, hazloc: 0, intel: 1, fulldx: 1, ion_fw: 1, wires: "1"} },
             ]
           },
           {
@@ -832,7 +837,7 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'Heavy Duty Headsets Ã¢ÂÂ IMPRES (R7 & Ion)',
+            title: 'Heavy Duty Headsets ÃÂ¢ÃÂÃÂ IMPRES (R7 & Ion)',
             items: [
               { img: null, pn: 'PMLN8085', desc: 'Heavy Duty Behind-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc', checks: {impres: 1, ip: 1, hazloc: 'UL', intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
               { img: null, pn: 'PMLN8086', desc: 'Heavy Duty Over-the-Head Headset, Noise-Canceling Boom Mic, IP54', note: '24dB NRR, dual-muff, IMPRES intelligent audio, UL HazLoc', checks: {impres: 1, ip: 1, hazloc: 'UL', intel: 1, ion_fw: 0, nrr: "24dB", nc: 1} },
@@ -841,9 +846,9 @@ const RADIOS_DATA = {'r7': {
           {
             title: '3M Peltor CH-3 Series (R7 & Ion)',
             items: [
-              { img: null, pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR Ã¢ÂÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
-              { img: null, pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR Ã¢ÂÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
-              { img: null, pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector', note: '24dB NRR Ã¢ÂÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { img: null, pn: 'PMLN8265', desc: 'CH-3 Over-the-Head Headset with Nexus Connector', note: '26dB NRR ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "26dB", nc: 0} },
+              { img: null, pn: 'PMLN8266', desc: 'CH-3 Neckband Headset with Nexus Connector', note: '24dB NRR ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
+              { img: null, pn: 'PMLN8267', desc: 'CH-3 Hard Hat Attached Headset with Nexus Connector', note: '24dB NRR ÃÂ¢ÃÂÃÂ requires PTT adapter PMLN8297. Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "24dB", nc: 0} },
               { img: null, pn: 'PMLN8297', desc: 'PTT Nexus Adapter (required for CH-3 headsets above)', note: 'Ion fw M-Ion.2022.03+', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 1, nrr: "\u2014", nc: 0} },
             ]
           }
@@ -855,11 +860,11 @@ const RADIOS_DATA = {'r7': {
         icon: '',
         sections: [
           {
-            title: 'IMPRES 2 Li-Ion Batteries Ã¢ÂÂ Ion',
+            title: 'IMPRES 2 Li-Ion Batteries ÃÂ¢ÃÂÃÂ Ion',
             items: [
-              { img: null, pn: 'PMNN4803', desc: 'IMPRES 2 Li-Ion 2820mAh IP68 Slim Battery', note: 'IP68, 114x69x16mm, 145g', checks: {impres: 1, chem: 'Li-Ion', mah: "2820", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4804', desc: 'IMPRES 2 Li-Ion 2900mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x24mm, 171g', checks: {impres: 1, chem: 'Li-Ion', mah: "2900", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂ°C"} },
-              { img: null, pn: 'PMNN4805', desc: 'IMPRES 2 Li-Ion 4400mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x27mm, 211g', checks: {impres: 1, chem: 'Li-Ion', mah: "4400", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂ°C"} },
+              { img: null, pn: 'PMNN4803', desc: 'IMPRES 2 Li-Ion 2820mAh IP68 Slim Battery', note: 'IP68, 114x69x16mm, 145g', checks: {impres: 1, chem: 'Li-Ion', mah: "2820", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4804', desc: 'IMPRES 2 Li-Ion 2900mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x24mm, 171g', checks: {impres: 1, chem: 'Li-Ion', mah: "2900", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4805', desc: 'IMPRES 2 Li-Ion 4400mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x27mm, 211g', checks: {impres: 1, chem: 'Li-Ion', mah: "4400", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
             ]
           }
         ]
@@ -917,10 +922,10 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Carry Straps & Cases',
             items: [
-              { img: null, pn: 'HLN9985',  desc: 'Waterproof Bag with Large Strap', note: 'Securely carries MOTOTRBO two-way radios', checks: { style:'Bag', material:'Nylon', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: '', checks: { style:'Strap', material:'Nylon', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap Ã¢ÂÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
+              { img: null, pn: 'HLN9985',  desc: 'Waterproof Bag with Large Strap', note: 'Securely carries MOTOTRBO two-way radios', checks: { style:'Bag', material:'Nylon', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: '', checks: { style:'Strap', material:'Nylon', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap ÃÂ¢ÃÂÃÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
             ]
           },
         ]
@@ -956,7 +961,7 @@ const RADIOS_DATA = {'r7': {
 
   'r7ex': {
     name: 'MOTOTRBO R7Ex',
-    sub: 'ATEX/IECEx Ã¢ÂÂ Zone 1 & 2, Ex ib IIC T4 Gb',
+    sub: 'ATEX/IECEx ÃÂ¢ÃÂÃÂ Zone 1 & 2, Ex ib IIC T4 Gb',
     tags: ['ATEX/IECEx Certified', 'IP67/IP68', 'IMPRES', 'Zone 1 & 2'],
     tagStyles: ['red', 'green', 'orange', 'amber'],
     discontinued: false,
@@ -977,12 +982,12 @@ const RADIOS_DATA = {'r7': {
             title: 'NS750Ex RSM Accessories & Replacement Parts',
             items: [
               { img: null, pn: '0104064J25', desc: 'NS750Ex Replacement Swivel Clip (1 pc/pack)', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'PMLN8466', desc: 'NS750Ex Front PTT Paddle Label Ã¢ÂÂ Red (10/pack)', note: '' },
-              { img: null, pn: 'PMLN8465', desc: 'NS750Ex Front PTT Paddle Label Ã¢ÂÂ Blue (10/pack)', note: '' },
-              { img: null, pn: 'PMLN8464', desc: 'NS750Ex Front PTT Paddle Label Ã¢ÂÂ Green (10/pack)', note: '' },
-              { img: null, pn: 'PMLN8468', desc: 'NS750Ex Front PTT Paddle Label Ã¢ÂÂ Yellow (10/pack)', note: '' },
-              { img: null, pn: 'PMLN8523', desc: 'NS750Ex Front PTT Paddle Label Ã¢ÂÂ Orange (10/pack)', note: '' },
-              { img: null, pn: 'PMLN8469', desc: 'NS750Ex Front PTT Paddle Label Ã¢ÂÂ Silver (10/pack)', note: '' },
+              { img: null, pn: 'PMLN8466', desc: 'NS750Ex Front PTT Paddle Label ÃÂ¢ÃÂÃÂ Red (10/pack)', note: '' },
+              { img: null, pn: 'PMLN8465', desc: 'NS750Ex Front PTT Paddle Label ÃÂ¢ÃÂÃÂ Blue (10/pack)', note: '' },
+              { img: null, pn: 'PMLN8464', desc: 'NS750Ex Front PTT Paddle Label ÃÂ¢ÃÂÃÂ Green (10/pack)', note: '' },
+              { img: null, pn: 'PMLN8468', desc: 'NS750Ex Front PTT Paddle Label ÃÂ¢ÃÂÃÂ Yellow (10/pack)', note: '' },
+              { img: null, pn: 'PMLN8523', desc: 'NS750Ex Front PTT Paddle Label ÃÂ¢ÃÂÃÂ Orange (10/pack)', note: '' },
+              { img: null, pn: 'PMLN8469', desc: 'NS750Ex Front PTT Paddle Label ÃÂ¢ÃÂÃÂ Silver (10/pack)', note: '' },
               { img: null, pn: 'PMLN8121', desc: 'RM750Ex Low Profile Swivel Clip (1 pc/pack)', note: '' },
             ]
           },
@@ -997,12 +1002,12 @@ const RADIOS_DATA = {'r7': {
             items: [
               { img: null, pn: 'RLN6242', desc: 'Low Noise Kit with Translucent Tube and Clear Rubber Eartip', note: 'For use with PMLN8643', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
               { img: null, pn: 'RLN6282', desc: 'Replacement Standard Clear Rubber Eartip (50/pack)', note: 'For RLN6242 / PMLN8643', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'RLN4760', desc: 'Custom Earpiece Ã¢ÂÂ Small, Right Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'RLN4761', desc: 'Custom Earpiece Ã¢ÂÂ Medium, Right Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'RLN4762', desc: 'Custom Earpiece Ã¢ÂÂ Large, Right Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'RLN4763', desc: 'Custom Earpiece Ã¢ÂÂ Small, Left Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'RLN4764', desc: 'Custom Earpiece Ã¢ÂÂ Medium, Left Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
-              { img: null, pn: 'RLN4765', desc: 'Custom Earpiece Ã¢ÂÂ Large, Left Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'RLN4760', desc: 'Custom Earpiece ÃÂ¢ÃÂÃÂ Small, Right Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'RLN4761', desc: 'Custom Earpiece ÃÂ¢ÃÂÃÂ Medium, Right Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'RLN4762', desc: 'Custom Earpiece ÃÂ¢ÃÂÃÂ Large, Right Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'RLN4763', desc: 'Custom Earpiece ÃÂ¢ÃÂÃÂ Small, Left Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'RLN4764', desc: 'Custom Earpiece ÃÂ¢ÃÂÃÂ Medium, Left Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
+              { img: null, pn: 'RLN4765', desc: 'Custom Earpiece ÃÂ¢ÃÂÃÂ Large, Left Ear', note: '', checks: {impres: 0, ip: 0, hazloc: 0, intel: 0, ion_fw: 0, bt: 0, fulldx: 0} },
             ]
           },
         ]
@@ -1061,7 +1066,7 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'ATEX/IECEx Battery',
             items: [
-              { img: null, pn: 'PMNN4848', desc: 'IMPRES Li-Ion 2150mAh IP66/IP68 ATEX Battery', note: 'ATEX/IECEx certified', checks: {impres: 1, chem: 'Li-Ion', mah: "2150", ip: "IP66", hazloc: 'ATEX', temp: "-25 to +60ÃÂ°C"} },
+              { img: null, pn: 'PMNN4848', desc: 'IMPRES Li-Ion 2150mAh IP66/IP68 ATEX Battery', note: 'ATEX/IECEx certified', checks: {impres: 1, chem: 'Li-Ion', mah: "2150", ip: "IP66", hazloc: 'ATEX', temp: "-25 to +60ÃÂÃÂ°C"} },
             ]
           },
         ]
@@ -1108,21 +1113,21 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Hard Leather Carry Cases (ATEX)',
             items: [
-              { img: null, pn: 'PMLN8636', desc: 'Hard Leather Case, 2.5-inch Swivel Belt Loop Ã¢ÂÂ R7Ex Non-Display', note: 'D-rings; straps with snap buttons', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:1 } },
-              { img: null, pn: 'PMLN8637', desc: 'Hard Leather Case, 2.5-inch Swivel Belt Loop Ã¢ÂÂ R7Ex Display', note: 'D-rings; straps with snap buttons', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:1 } },
-              { img: null, pn: 'PMLN8641', desc: 'Hard Leather Case, 2.5-inch Fixed Belt Loop Ã¢ÂÂ R7Ex Non-Display', note: 'D-rings', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:0 } },
-              { img: null, pn: 'PMLN8642', desc: 'Hard Leather Case, 2.5-inch Fixed Belt Loop Ã¢ÂÂ R7Ex Display', note: 'D-rings', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:0 } },
+              { img: null, pn: 'PMLN8636', desc: 'Hard Leather Case, 2.5-inch Swivel Belt Loop ÃÂ¢ÃÂÃÂ R7Ex Non-Display', note: 'D-rings; straps with snap buttons', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:1 } },
+              { img: null, pn: 'PMLN8637', desc: 'Hard Leather Case, 2.5-inch Swivel Belt Loop ÃÂ¢ÃÂÃÂ R7Ex Display', note: 'D-rings; straps with snap buttons', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:1 } },
+              { img: null, pn: 'PMLN8641', desc: 'Hard Leather Case, 2.5-inch Fixed Belt Loop ÃÂ¢ÃÂÃÂ R7Ex Non-Display', note: 'D-rings', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:0 } },
+              { img: null, pn: 'PMLN8642', desc: 'Hard Leather Case, 2.5-inch Fixed Belt Loop ÃÂ¢ÃÂÃÂ R7Ex Display', note: 'D-rings', checks: { style:'Case', material:'Leather', belt_sz:'2.5"', swivel:0 } },
               { img: null, pn: 'PMLN8722', desc: '2.5-inch Swivel Belt Loop for ATEX Model', note: 'Hard leather replacement', checks: { style:'Clip', material:'Leather', belt_sz:'2.5"', swivel:1 } },
-              { img: null, pn: 'PMLN6086', desc: '2.5-inch Belt Clip Ã¢ÂÂ Display and Non-Display', note: 'Plastic', checks: { style:'Clip', material:'Plastic', belt_sz:'2.5"', swivel:0 } },
+              { img: null, pn: 'PMLN6086', desc: '2.5-inch Belt Clip ÃÂ¢ÃÂÃÂ Display and Non-Display', note: 'Plastic', checks: { style:'Clip', material:'Plastic', belt_sz:'2.5"', swivel:0 } },
             ]
           },
           {
             title: 'Straps',
             items: [
-              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap Ã¢ÂÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: '', checks: { style:'Strap', material:'Nylon', belt_sz:'Ã¢ÂÂ', swivel:0 } },
-              { img: null, pn: 'RLN6488',  desc: 'Anti-Sway Strap for Leather Radio Straps', note: 'Accessory for RLN6486/RLN6487', checks: { style:'Strap', material:'Leather', belt_sz:'Ã¢ÂÂ', swivel:0 } },
+              { img: null, pn: 'RLN6486',  desc: 'Leather Radio Strap', note: 'Standard length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6487',  desc: 'Leather Radio Strap ÃÂ¢ÃÂÃÂ XL', note: 'Extended length', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'NTN5243',  desc: 'Adjustable Nylon Carrying Strap', note: '', checks: { style:'Strap', material:'Nylon', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
+              { img: null, pn: 'RLN6488',  desc: 'Anti-Sway Strap for Leather Radio Straps', note: 'Accessory for RLN6486/RLN6487', checks: { style:'Strap', material:'Leather', belt_sz:'ÃÂ¢ÃÂÃÂ', swivel:0 } },
             ]
           },
         ]
@@ -1150,11 +1155,11 @@ const RADIOS_DATA = {'r7': {
           {
             title: 'Antenna ID Bands (10/pack)',
             items: [
-              { img: null, pn: '32012144001', desc: 'Antenna ID Band Ã¢ÂÂ Grey (10/pack)', note: '' },
-              { img: null, pn: '32012144002', desc: 'Antenna ID Band Ã¢ÂÂ Yellow (10/pack)', note: '' },
-              { img: null, pn: '32012144003', desc: 'Antenna ID Band Ã¢ÂÂ Green (10/pack)', note: '' },
-              { img: null, pn: '32012144004', desc: 'Antenna ID Band Ã¢ÂÂ Blue (10/pack)', note: '' },
-              { img: null, pn: '32012144005', desc: 'Antenna ID Band Ã¢ÂÂ Purple (10/pack)', note: '' },
+              { img: null, pn: '32012144001', desc: 'Antenna ID Band ÃÂ¢ÃÂÃÂ Grey (10/pack)', note: '' },
+              { img: null, pn: '32012144002', desc: 'Antenna ID Band ÃÂ¢ÃÂÃÂ Yellow (10/pack)', note: '' },
+              { img: null, pn: '32012144003', desc: 'Antenna ID Band ÃÂ¢ÃÂÃÂ Green (10/pack)', note: '' },
+              { img: null, pn: '32012144004', desc: 'Antenna ID Band ÃÂ¢ÃÂÃÂ Blue (10/pack)', note: '' },
+              { img: null, pn: '32012144005', desc: 'Antenna ID Band ÃÂ¢ÃÂÃÂ Purple (10/pack)', note: '' },
             ]
           },
         ]
