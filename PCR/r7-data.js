@@ -7,7 +7,7 @@ const RADIOS_DATA = {'r7': {
     tagStyles: ['', 'green', 'orange', '', ''],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "IP", "HazLoc", "Intel Audio", "Ion FW Req", "BT/Wireless", "Full Duplex"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -71,7 +71,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       wireless: {
-        cols: ["Part Number", "Description", "IP Rated", "BT", "Full Duplex", "NFC", "Emg Btn", "FW Required"],
+        cols: ["Part Number", "Description", "Earpiece Type", "Microphone", "Full Duplex", "PTT", "Talk Time (Hours)", "ChrgTime", "Weight", "Dimensions", "Ops Critical", "Pairing", "Range (Feet)", "IP Rating", "HazLoc"],
         label: 'Wireless / Bluetooth',
         icon: '',
         sections: [
@@ -111,7 +111,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       surveillance: {
-        cols: ["Part Number", "Description", "IMPRES", "HazLoc", "Intel Audio", "Full Duplex", "Ion FW Req", "Wires"],
+        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
         label: 'Surveillance & Earpieces',
         icon: '',
         sections: [
@@ -148,7 +148,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -171,23 +171,23 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "IP Rating", "HazLoc", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
         label: 'Batteries',
         icon: '',
         sections: [
           {
             title: 'IMPRES Li-Ion Batteries - R7',
             items: [
-              { img: null, pn: 'PMNN4807', desc: 'IMPRES Li-Ion 2200mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 118g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4809', desc: 'IMPRES Li-Ion 2850mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 135g', checks: {impres: 1, chem: 'Li-Ion', mah: "2850", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4810', desc: 'IMPRES Li-Ion 3200mAh IP68 TIA4950 Battery', note: 'IP66/IP68, UL HazLoc, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4603', desc: 'IMPRES Li-Ion 3200mAh IP68 Battery', note: 'IP66/IP68, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4807', desc: 'IMPRES Li-Ion 2200mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 118g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP68", hazloc: 0, temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4809', desc: 'IMPRES Li-Ion 2850mAh IP68 Slim Battery', note: 'IP66/IP68, 116x55x17mm, 135g', checks: {impres: 1, chem: 'Li-Ion', mah: "2850", ip: "IP68", hazloc: 0, temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4810', desc: 'IMPRES Li-Ion 3200mAh IP68 TIA4950 Battery', note: 'IP66/IP68, UL HazLoc, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 'UL', temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4603', desc: 'IMPRES Li-Ion 3200mAh IP68 Battery', note: 'IP66/IP68, 116x55x23mm, 168g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP68", hazloc: 0, temp: "-20 to +60°C"} },
             ]
           }
         ]
       },
       chargers: {
-        cols: ["Part Number", "Description", "IMPRES", "Pockets", "Voltage", "Chemistry"],
+        cols: ["Part Number", "Description", "Material", "Belt", "Swivel", "Display", "D-Rings"],
         label: 'Chargers',
         icon: '',
         sections: [
@@ -368,7 +368,7 @@ const RADIOS_DATA = {'r7': {
     tagStyles: ['', 'green', 'orange', '', 'purple'],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "IP", "HazLoc", "Intel Audio", "Ion FW Req", "BT/Wireless", "Full Duplex"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -407,7 +407,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       wireless: {
-        cols: ["Part Number", "Description", "IP Rated", "BT", "Full Duplex", "NFC", "Emg Btn", "FW Required"],
+        cols: ["Part Number", "Description", "Earpiece Type", "Microphone", "Full Duplex", "PTT", "Talk Time (Hours)", "ChrgTime", "Weight", "Dimensions", "Ops Critical", "Pairing", "Range (Feet)", "IP Rating", "HazLoc"],
         label: 'Wireless / Bluetooth',
         icon: '',
         sections: [
@@ -446,7 +446,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       surveillance: {
-        cols: ["Part Number", "Description", "IMPRES", "HazLoc", "Intel Audio", "Full Duplex", "Ion FW Req", "Wires"],
+        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
         label: 'Surveillance & Earpieces',
         icon: '',
         sections: [
@@ -510,7 +510,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -543,23 +543,23 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "IP Rating", "HazLoc", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
         label: 'Batteries',
         icon: '',
         sections: [
           {
             title: 'IMPRES Li-Ion Batteries - R5',
             items: [
-              { img: null, pn: 'PMNN4878', desc: 'Li-Ion IP67 2400mAh Battery', note: 'IP67, 122x55x24mm, 144g - EMEA and APAC only', checks: {impres: 0, chem: 'Li-Ion', mah: "2400", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4888', desc: 'IMPRES Slim Li-Ion IP67 2200mAh Battery', note: 'IP67, 122x55x18mm, 120g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4889', desc: 'IMPRES High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, 122x55x24mm, 148g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4890', desc: 'IMPRES UL High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, UL HazLoc, 122x55x24mm, 162g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4878', desc: 'Li-Ion IP67 2400mAh Battery', note: 'IP67, 122x55x24mm, 144g - EMEA and APAC only', checks: {impres: 0, chem: 'Li-Ion', mah: "2400", ip: "IP67", hazloc: 0, temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4888', desc: 'IMPRES Slim Li-Ion IP67 2200mAh Battery', note: 'IP67, 122x55x18mm, 120g', checks: {impres: 1, chem: 'Li-Ion', mah: "2200", ip: "IP67", hazloc: 0, temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4889', desc: 'IMPRES High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, 122x55x24mm, 148g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 0, temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4890', desc: 'IMPRES UL High Capacity Li-Ion IP67 3200mAh Battery', note: 'IP67, UL HazLoc, 122x55x24mm, 162g', checks: {impres: 1, chem: 'Li-Ion', mah: "3200", ip: "IP67", hazloc: 'UL', temp: "-20 to +60°C"} },
             ]
           }
         ]
       },
       chargers: {
-        cols: ["Part Number", "Description", "IMPRES", "Pockets", "Voltage", "Chemistry"],
+        cols: ["Part Number", "Description", "Material", "Belt", "Swivel", "Display", "D-Rings"],
         label: 'Chargers',
         icon: '',
         sections: [
@@ -725,7 +725,7 @@ const RADIOS_DATA = {'r7': {
     tagStyles: ['orange', 'orange', 'green', '', 'green'],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "IP", "HazLoc", "Intel Audio", "Ion FW Req", "BT/Wireless", "Full Duplex"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -762,7 +762,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       wireless: {
-        cols: ["Part Number", "Description", "IP Rated", "BT", "Full Duplex", "NFC", "Emg Btn", "FW Required"],
+        cols: ["Part Number", "Description", "Earpiece Type", "Microphone", "Full Duplex", "PTT", "Talk Time (Hours)", "ChrgTime", "Weight", "Dimensions", "Ops Critical", "Pairing", "Range (Feet)", "IP Rating", "HazLoc"],
         label: 'Wireless / Bluetooth',
         icon: '',
         sections: [
@@ -802,7 +802,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       surveillance: {
-        cols: ["Part Number", "Description", "IMPRES", "HazLoc", "Intel Audio", "Full Duplex", "Ion FW Req", "Wires"],
+        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
         label: 'Surveillance & Earpieces',
         icon: '',
         sections: [
@@ -831,7 +831,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -854,16 +854,16 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "IP Rating", "HazLoc", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
         label: 'Batteries',
         icon: '',
         sections: [
           {
             title: 'IMPRES 2 Li-Ion Batteries - Ion',
             items: [
-              { img: null, pn: 'PMNN4803', desc: 'IMPRES 2 Li-Ion 2820mAh IP68 Slim Battery', note: 'IP68, 114x69x16mm, 145g', checks: {impres: 1, chem: 'Li-Ion', mah: "2820", ip: "IP68", hazloc: 0, temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4804', desc: 'IMPRES 2 Li-Ion 2900mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x24mm, 171g', checks: {impres: 1, chem: 'Li-Ion', mah: "2900", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
-              { img: null, pn: 'PMNN4805', desc: 'IMPRES 2 Li-Ion 4400mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x27mm, 211g', checks: {impres: 1, chem: 'Li-Ion', mah: "4400", ip: "IP68", hazloc: 'UL', temp: "-20 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4803', desc: 'IMPRES 2 Li-Ion 2820mAh IP68 Slim Battery', note: 'IP68, 114x69x16mm, 145g', checks: {impres: 1, chem: 'Li-Ion', mah: "2820", ip: "IP68", hazloc: 0, temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4804', desc: 'IMPRES 2 Li-Ion 2900mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x24mm, 171g', checks: {impres: 1, chem: 'Li-Ion', mah: "2900", ip: "IP68", hazloc: 'UL', temp: "-20 to +60°C"} },
+              { img: null, pn: 'PMNN4805', desc: 'IMPRES 2 Li-Ion 4400mAh IP68 TIA4950 Battery', note: 'IP68, UL HazLoc, 114x69x27mm, 211g', checks: {impres: 1, chem: 'Li-Ion', mah: "4400", ip: "IP68", hazloc: 'UL', temp: "-20 to +60°C"} },
             ]
           }
         ]
@@ -965,7 +965,7 @@ const RADIOS_DATA = {'r7': {
     discontinued: false,
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "IP", "HazLoc", "Intel Audio", "Ion FW Req", "BT/Wireless", "Full Duplex"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -1011,7 +1011,7 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "IMPRES", "IP Rated", "HazLoc", "Intel Audio", "Ion FW Req", "NRR", "Noise Cancel"],
+        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -1057,20 +1057,20 @@ const RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "IP Rating", "HazLoc", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
         label: 'Batteries',
         icon: '',
         sections: [
           {
             title: 'ATEX/IECEx Battery',
             items: [
-              { img: null, pn: 'PMNN4848', desc: 'IMPRES Li-Ion 2150mAh IP66/IP68 ATEX Battery', note: 'ATEX/IECEx certified', checks: {impres: 1, chem: 'Li-Ion', mah: "2150", ip: "IP66", hazloc: 'ATEX', temp: "-25 to +60ÃÂÃÂ°C"} },
+              { img: null, pn: 'PMNN4848', desc: 'IMPRES Li-Ion 2150mAh IP66/IP68 ATEX Battery', note: 'ATEX/IECEx certified', checks: {impres: 1, chem: 'Li-Ion', mah: "2150", ip: "IP66", hazloc: 'ATEX', temp: "-25 to +60°C"} },
             ]
           },
         ]
       },
       chargers: {
-        cols: ["Part Number", "Description", "IMPRES", "Pockets", "Voltage", "Chemistry"],
+        cols: ["Part Number", "Description", "Material", "Belt", "Swivel", "Display", "D-Rings"],
         label: 'Chargers',
         icon: '',
         sections: [
@@ -1183,7 +1183,6 @@ const RADIOS_DATA = {'r7': {
   }
 };
 const RADIOS = RADIOS_DATA;
-
 
 
 
