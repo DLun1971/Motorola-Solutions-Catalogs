@@ -15,17 +15,17 @@ var RADIOS_DATA = {'r7': {
             title: 'RM Series - GCAI Mini Connector (R7 / Ion)',
             items: [
               { img: null, pn: 'PMMN4128', desc: 'RM780 IMPRES Windporting RSM, Large, Work-When-Wet', note: 'IP68, UL HazLoc, 2 prog buttons + emergency, intelligent audio', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 1, ains: 0, windport: 0, wwet: 0, volsteps: 0, progbtn: 0, jack: 0 } },
-              { img: null, pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio - requires Ion firmware M-Ion.2022.03+', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 1, bt: 0, fulldx: 0, ains: 0, windport: 0, wwet: 0, volsteps: 0, progbtn: 0, jack: 0 } },
-              { img: null, pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button - requires Ion firmware M-Ion.2022.03+', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 1, bt: 0, fulldx: 0, ains: 0, windport: 0, wwet: 0, volsteps: 0, progbtn: 0, jack: 0 } },
+              { img: null, pn: 'PMMN4140', desc: 'RM760 IMPRES Windporting RSM, Large Basic, Work-When-Wet', note: 'IP68, UL HazLoc, intelligent audio - requires Ion firmware M-Ion.2022.03+', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 1, bt: 0, fulldx: 1, ains: 0, windport: 1, wwet: 1, volsteps: 2, progbtn: 0, jack: 0 } },
+              { img: null, pn: 'PMMN4131', desc: 'RM730 IMPRES Windporting RSM, Small', note: 'IP68, UL HazLoc, emergency button - requires Ion firmware M-Ion.2022.03+', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 1, bt: 0, fulldx: 1, ains: 0, windport: 1, wwet: 0, volsteps: 2, progbtn: 0, jack: 0 } },
             ]
           },
           {
             title: 'NS750 Series - Omni-Directional RSM (R7)',
             items: [
-              { img: null, pn: 'PMMN4150', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Long Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet - EMEA only', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0, windport: 0, smart_sw: 0, progbtn: 0, jack: 0, dims: 0 } },
-              { img: null, pn: 'PMMN4151', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Short Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet - EMEA only', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0, windport: 0, smart_sw: 0, progbtn: 0, jack: 0, dims: 0 } },
-              { img: null, pn: 'PMMN4150_BLK', desc: 'NS750 IMPRES Omni-Directional RSM, Black, Long Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0, windport: 0, smart_sw: 0, progbtn: 0, jack: 0, dims: 0 } },
-              { img: null, pn: 'PMMN4151_BLK', desc: 'NS750 IMPRES Omni-Directional RSM, Black, Short Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 0, ion_fw: 0, bt: 0, fulldx: 0, windport: 0, smart_sw: 0, progbtn: 0, jack: 0, dims: 0 } },
+              { img: null, pn: 'PMMN4150', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Long Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet - EMEA only', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 0, windport: 1, smart_sw: 1, progbtn: 1, jack: '3.5mm', dims: '94x68x45' } },
+              { img: null, pn: 'PMMN4151', desc: 'NS750 IMPRES Omni-Directional RSM, Large Front PTT + Side PTT, Short Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet - EMEA only', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 0, windport: 1, smart_sw: 1, progbtn: 1, jack: '3.5mm', dims: '94x68x45' } },
+              { img: null, pn: 'PMMN4150_BLK', desc: 'NS750 IMPRES Omni-Directional RSM, Black, Long Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 0, windport: 1, smart_sw: 1, progbtn: 1, jack: '3.5mm', dims: '94x68x45' } },
+              { img: null, pn: 'PMMN4151_BLK', desc: 'NS750 IMPRES Omni-Directional RSM, Black, Short Cable', note: 'IP68, UL HazLoc, smart audio switching, work-when-wet', checks: { impres: 1, ip: 'IP68', hazloc: 'UL', intel: 1, ion_fw: 0, bt: 0, fulldx: 0, windport: 1, smart_sw: 1, progbtn: 1, jack: '3.5mm', dims: '94x68x45' } },
             ]
           },
           {
