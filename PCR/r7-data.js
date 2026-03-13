@@ -215,7 +215,7 @@ const RADIOS_DATA = {'r7': {
           ] },
           { title: 'Vehicular Charger', items: [
               { img: null, pn: 'NNTN7616', desc: 'IMPRES Vehicular Charger Kit', note: 'IMPRES, Li-Ion/NiMH, hard-wired to vehicle battery', checks: {impres: 1, pockets: "1", voltage: "12VDC", chem: "Li-Ion/NiMH"} },
-          ] }
+          ] },
           { title: 'Charger Replacement Parts / Power Cords', items: [
               { img: null, pn: 'PS000242A01', desc: 'Power Supply, Multi-Unit Charger', note: 'Replacement power supply for multi-unit charger', checks: {impres: 0, pockets: "", voltage: "", chem: ""} },
               { img: null, pn: '3087791G01', desc: 'Power Cord, US/NA Plug', note: 'Replacement power cord', checks: {impres: 0, pockets: "", voltage: "100-120VAC", chem: ""} },
