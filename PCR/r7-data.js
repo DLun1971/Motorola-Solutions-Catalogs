@@ -368,7 +368,7 @@ var RADIOS_DATA = {'r7': {
     tagStyles: ['', 'green', 'orange', '', 'purple'],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "Full Duplex", "Vol Steps", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -725,7 +725,7 @@ var RADIOS_DATA = {'r7': {
     tagStyles: ['orange', 'orange', 'green', '', 'green'],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "AINS", "Windporting", "WWet", "Vol Steps", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -854,7 +854,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES 2", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
         label: 'Batteries',
         icon: '',
         sections: [
@@ -965,7 +965,7 @@ var RADIOS_DATA = {'r7': {
     discontinued: false,
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
+        cols: ["Part Number", "Description", "IMPRES", "ANC", "Front PTT", "Side PTT", "Audio Jack", "IP Rating", "HazLoc"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -1011,7 +1011,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
+        cols: ["Part Number", "Description", "Headset Type", "ConType", "SNR", "Microphone", "PTT Req", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -1070,7 +1070,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       chargers: {
-        cols: ["Part Number", "Description", "Material", "Belt", "Swivel", "Display", "D-Rings"],
+        cols: ['Part Number','Description','IMPRES','Pockets','Voltage','Chemistry'],
         label: 'Chargers',
         icon: '',
         sections: [
@@ -1131,7 +1131,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       antennas: {
-        cols: ["Part Number", "Description", "Band", "Freq", "Ant Type", "Length"],
+        cols: ["Part Number", "Description", "Band", "Freq", "Ant Type", "Length", "HazLoc"],
         label: 'Antennas',
         icon: '',
         sections: [
