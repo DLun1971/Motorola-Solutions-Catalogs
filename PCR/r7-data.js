@@ -1,6 +1,6 @@
 /* MOTOTRBO R7, Ion, R5, R7Ex - Product Data - r7-data.js */
 
-const RADIOS_DATA = {'r7': {
+var RADIOS_DATA = {'r7': {
     name: 'MOTOTRBO R7',
     sub: 'Professional DMR Portable',
     tags: ['DMR Tier II/III', 'IP68 Rugged', 'IMPRES', 'Bluetooth 5.0', 'Wi-Fi'],
@@ -1183,6 +1183,7 @@ const RADIOS_DATA = {'r7': {
   }
 };
 const RADIOS = RADIOS_DATA;
+
 
 
 
