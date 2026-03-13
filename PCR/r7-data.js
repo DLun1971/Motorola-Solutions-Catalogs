@@ -268,7 +268,7 @@ const RADIOS_DATA = {'r7': {
       hardcases: {
         label: 'Hard Cases',
         cols: ["Part Number","Description","Style","Material"],
-        groups: [
+        sections: [
           {
             title: 'R7 Hard Cases',
             items: [
@@ -1189,6 +1189,7 @@ const RADIOS_DATA = {'r7': {
   }
 };
 const RADIOS = RADIOS_DATA;
+
 
 
 
