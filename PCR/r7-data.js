@@ -7,7 +7,7 @@ var RADIOS_DATA = {'r7': {
     tagStyles: ['', 'green', 'orange', '', ''],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "SmartSW", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "Wndprt", "SmartSW", "ProgBtn", "Jck", "IP", "HazLoc", "Dims"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -71,7 +71,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       wireless: {
-        cols: ["Part Number", "Description", "Earpiece Type", "Microphone", "Full Duplex", "PTT", "Talk Time (Hours)", "ChrgTime", "Weight", "Dimensions", "Ops Critical", "Pairing", "Range (Feet)", "IP Rating", "HazLoc"],
+        cols: ["Part Number", "Description", "EpTyp", "Mic", "FulDpx", "PTT", "TlkTm", "ChrgTime", "Weight", "Dims", "OpsCrit", "Pair", "Range", "IP", "HazLoc"],
         label: 'Wireless / Bluetooth',
         icon: '',
         sections: [
@@ -111,7 +111,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       surveillance: {
-        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
+        cols: ["Part Number", "Description", "HsTyp", "EpStyl", "IMPRES", "InAud", "NRR", "Mic", "PTT", "Weight", "HazLoc"],
         label: 'Surveillance & Earpieces',
         icon: '',
         sections: [
@@ -148,7 +148,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
+        cols: ["Part Number", "Description", "HsTyp", "EpStyl", "IMPRES", "InAud", "NRR", "Mic", "PTT", "Weight", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -171,7 +171,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES", "Chem", "Capacity", "Dims", "Weight", "HazLoc", "IP", "Temp"],
         label: 'Batteries',
         icon: '',
         sections: [
@@ -187,7 +187,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       chargers: {
-        cols: ["Part Number", "Description", "Material", "Belt", "Swivel", "Display", "D-Rings"],
+        cols: ["Part Number", "Description", "Matl", "Belt", "Swivel", "Display", "D-Rings"],
         label: 'Chargers',
         icon: '',
         sections: [
@@ -242,7 +242,7 @@ var RADIOS_DATA = {'r7': {
       carry: {
         label: 'Carry Solutions',
         icon: '',
-        cols: ['Part Number','Description','Style','Material','Belt','Swivel'],
+        cols: ['Part Number','Description','Style','Matl','Belt','Swivel'],
         sections: [
           {
             title: 'Holsters & Belt Clips',
@@ -368,7 +368,7 @@ var RADIOS_DATA = {'r7': {
     tagStyles: ['', 'green', 'orange', '', 'purple'],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "InAud", "Windporting", "Full Duplex", "Vol Steps", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc", "Dimensions"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "Wndprt", "FulDpx", "Vol Steps", "ProgBtn", "Jck", "IP", "HazLoc", "Dims"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -407,7 +407,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       wireless: {
-        cols: ["Part Number", "Description", "Earpiece Type", "Microphone", "Full Duplex", "PTT", "Talk Time (Hours)", "ChrgTime", "Weight", "Dimensions", "Ops Critical", "Pairing", "Range (Feet)", "IP Rating", "HazLoc"],
+        cols: ["Part Number", "Description", "EpTyp", "Mic", "FulDpx", "PTT", "TlkTm", "ChrgTime", "Weight", "Dims", "OpsCrit", "Pair", "Range", "IP", "HazLoc"],
         label: 'Wireless / Bluetooth',
         icon: '',
         sections: [
@@ -446,7 +446,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       surveillance: {
-        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
+        cols: ["Part Number", "Description", "HsTyp", "EpStyl", "IMPRES", "InAud", "NRR", "Mic", "PTT", "Weight", "HazLoc"],
         label: 'Surveillance & Earpieces',
         icon: '',
         sections: [
@@ -510,7 +510,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
+        cols: ["Part Number", "Description", "HsTyp", "EpStyl", "IMPRES", "InAud", "NRR", "Mic", "PTT", "Weight", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -543,7 +543,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES", "Chem", "Capacity", "Dims", "Weight", "HazLoc", "IP", "Temp"],
         label: 'Batteries',
         icon: '',
         sections: [
@@ -559,7 +559,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       chargers: {
-        cols: ["Part Number", "Description", "Material", "Belt", "Swivel", "Display", "D-Rings"],
+        cols: ["Part Number", "Description", "Matl", "Belt", "Swivel", "Display", "D-Rings"],
         label: 'Chargers',
         icon: '',
         sections: [
@@ -615,7 +615,7 @@ var RADIOS_DATA = {'r7': {
       carry: {
         label: 'Carry Solutions',
         icon: '',
-        cols: ['Part Number','Description','Style','Material','Belt','Swivel'],
+        cols: ['Part Number','Description','Style','Matl','Belt','Swivel'],
         sections: [
           {
             title: 'Hard Leather Cases',
@@ -725,7 +725,7 @@ var RADIOS_DATA = {'r7': {
     tagStyles: ['orange', 'orange', 'green', '', 'green'],
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "InAud", "AINS", "Windporting", "WWet", "Vol Steps", "Programmable Button", "Audio Jack", "IP Rating", "HazLoc"],
+        cols: ["Part Number", "Description", "IMPRES", "InAud", "AINS", "Wndprt", "WWet", "Vol Steps", "ProgBtn", "Jck", "IP", "HazLoc"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -762,7 +762,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       wireless: {
-        cols: ["Part Number", "Description", "Earpiece Type", "Microphone", "Full Duplex", "PTT", "Talk Time (Hours)", "ChrgTime", "Weight", "Dimensions", "Ops Critical", "Pairing", "Range (Feet)", "IP Rating", "HazLoc"],
+        cols: ["Part Number", "Description", "EpTyp", "Mic", "FulDpx", "PTT", "TlkTm", "ChrgTime", "Weight", "Dims", "OpsCrit", "Pair", "Range", "IP", "HazLoc"],
         label: 'Wireless / Bluetooth',
         icon: '',
         sections: [
@@ -802,7 +802,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       surveillance: {
-        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
+        cols: ["Part Number", "Description", "HsTyp", "EpStyl", "IMPRES", "InAud", "NRR", "Mic", "PTT", "Weight", "HazLoc"],
         label: 'Surveillance & Earpieces',
         icon: '',
         sections: [
@@ -831,7 +831,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "Headset Type", "Earpiece Style", "IMPRES", "InAud", "NRR", "Microphone", "PTT", "Weight", "HazLoc"],
+        cols: ["Part Number", "Description", "HsTyp", "EpStyl", "IMPRES", "InAud", "NRR", "Mic", "PTT", "Weight", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -854,7 +854,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES 2", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES 2", "Chem", "Capacity", "Dims", "Weight", "HazLoc", "IP", "Temp"],
         label: 'Batteries',
         icon: '',
         sections: [
@@ -871,7 +871,7 @@ var RADIOS_DATA = {'r7': {
       chargers: {
       label: 'Chargers',
         icon: '',
-        cols: ['Part Number','Description','IMPRES','Pockets','Voltage','Chemistry'],
+        cols: ['Part Number','Description','IMPRES','Pockets','Volts','Chem'],
         sections: [
           { title: 'Ion Single-Unit Chargers', items: [
               { img: null, pn: 'PMPN4526', desc: 'IMPRES Single-Unit Charger for Ion, US/NA Plug', note: 'IMPRES, Li-Ion, 120VAC', checks: { impres: 1, pockets: '1', voltage: '120VAC', chem: 'Li-Ion' } },
@@ -904,7 +904,7 @@ var RADIOS_DATA = {'r7': {
       },
       carry: {label: 'Carry Solutions',
         icon: '',
-        cols: ['Part Number','Description','Style','Material','Belt','Swivel'],
+        cols: ['Part Number','Description','Style','Matl','Belt','Swivel'],
         sections: [
           {
             title: 'Holsters & Belt Clips',
@@ -965,7 +965,7 @@ var RADIOS_DATA = {'r7': {
     discontinued: false,
     categories: {
       rsm: {
-        cols: ["Part Number", "Description", "IMPRES", "ANC", "Front PTT", "Side PTT", "Audio Jack", "IP Rating", "HazLoc"],
+        cols: ["Part Number", "Description", "IMPRES", "ANC", "Front PTT", "Side PTT", "Jck", "IP", "HazLoc"],
         label: 'Remote Speaker Mics',
         icon: '',
         sections: [
@@ -1011,7 +1011,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       headsets: {
-        cols: ["Part Number", "Description", "Headset Type", "ConType", "SNR", "Microphone", "PTT Req", "HazLoc"],
+        cols: ["Part Number", "Description", "HsTyp", "ConType", "SNR", "Mic", "PTT Req", "HazLoc"],
         label: 'Headsets',
         icon: '',
         sections: [
@@ -1057,7 +1057,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       batteries: {
-        cols: ["Part Number", "Description", "IMPRES", "Chemistry", "Capacity", "Dimensions", "Weight", "HazLoc", "IP Rating", "Temp Range"],
+        cols: ["Part Number", "Description", "IMPRES", "Chem", "Capacity", "Dims", "Weight", "HazLoc", "IP", "Temp"],
         label: 'Batteries',
         icon: '',
         sections: [
@@ -1070,7 +1070,7 @@ var RADIOS_DATA = {'r7': {
         ]
       },
       chargers: {
-        cols: ['Part Number','Description','IMPRES','Pockets','Voltage','Chemistry'],
+        cols: ['Part Number','Description','IMPRES','Pockets','Volts','Chem'],
         label: 'Chargers',
         icon: '',
         sections: [
@@ -1106,7 +1106,7 @@ var RADIOS_DATA = {'r7': {
       carry: {
         label: 'Carry Solutions',
         icon: '',
-        cols: ['Part Number','Description','Style','Material','Belt','Swivel'],
+        cols: ['Part Number','Description','Style','Matl','Belt','Swivel'],
         sections: [
           {
             title: 'Hard Leather Carry Cases (ATEX)',
