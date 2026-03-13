@@ -416,10 +416,11 @@ function renderMatrix() {
   avail.forEach(r => { Object.entries(rd[r.key].categories || {}).forEach(([k,v]) => { catLabels[k] = v.label || k; }); });
 
   // Category filter
-  document.getElementById('matrix-cat-filter').innerHTML = ['All', ...allCats].map(c =>
-   `<button class="cat-btn${(!state.matrixCat&&c==='All')||state.matrixCat===c?' active':''}" onclick="setMatrixCat('${c==='All'?'':c}')">${esc(catLabels[c]||c)}</button>`
-  ).join('');
-
+  document.getElementById('matrix-cat-filter').innerHTML = ['All', ...allCats].map(c => {
+          const active = (!state.matrixCat && c === 'All') || state.matrixCat === c ? ' active' : '';
+          const val = c === 'All' ? '' : c;
+          return `<button class="cat-btn${active}" onclick="setMatrixCat('${val}')">${esc(catLabels[c] || c)}</button>`;
+        }).join('');
   // Collect all unique items
   const itemMap = new Map();
   avail.forEach(r => {
