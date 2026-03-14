@@ -295,11 +295,11 @@ var RADIOS_DATA = {'r7': {
           {
             title: 'UHF Antennas',
             items: [
-              { img: null, pn: 'PMAE4079', desc: 'UHF/GPS Wideband Slim Whip Antenna', note: '400-527 MHz, 15cm', checks: { band: 0, freq_mhz: 0, ant_type: 0, len_cm: 0, hazloc: 0 } },
+              { img: null, pn: 'PMAE4079', desc: 'UHF/GPS Wideband Slim Whip Antenna', note: '400-527 MHz, 15cm', checks: { band: 'UHF', freq_mhz: '400-527', ant_type: 'Whip', len_cm: '15', hazloc: 0 } },
               { img: null, pn: 'PMAE4069', desc: 'UHF/GPS Stubby Antenna', note: '403-450 MHz, 9cm', checks: { band: 'UHF', freq_mhz: '403-450', ant_type: 'Stubby', len_cm: '9' } },
               { img: null, pn: 'PMAE4070', desc: 'UHF/GPS Stubby Antenna', note: '440-490 MHz, 9cm', checks: { band: 'UHF', freq_mhz: '440-490', ant_type: 'Stubby', len_cm: '9' } },
               { img: null, pn: 'PMAE4071', desc: 'UHF/GPS Stubby Antenna', note: '470-527 MHz, 9cm', checks: { band: 'UHF', freq_mhz: '470-527', ant_type: 'Stubby', len_cm: '9' } },
-              { img: null, pn: 'AN000348A01', desc: 'UHF Stubby Wideband Antenna', note: '400-527 MHz, 9cm', checks: { band: 0, freq_mhz: 0, ant_type: 0, len_cm: 0, hazloc: 0 } },
+              { img: null, pn: 'AN000348A01', desc: 'UHF Stubby Wideband Antenna', note: '400-527 MHz, 9cm', checks: { band: 'UHF', freq_mhz: '400-527', ant_type: 'Stubby', len_cm: '9', hazloc: 0 } },
             ]
           },
           {
