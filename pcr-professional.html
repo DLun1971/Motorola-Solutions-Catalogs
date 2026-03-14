@@ -7,113 +7,78 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
 html,body{height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;background:#f5f2eb;color:#1a1a1a;}
-
-/* ── FROZEN HEADER ── */
+#app{display:flex;flex-direction:column;height:100vh;}
 #header{flex-shrink:0;background:#f5f2eb;padding:10px 16px 0;border-bottom:1px solid #ddd9cf;}
 #top-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
-#top-bar .catalog-title{font-size:15px;font-weight:600;color:#1a1a1a;display:flex;align-items:center;gap:10px;}
-#top-bar .catalog-title img{height:22px;}
+.catalog-title{font-size:15px;font-weight:600;color:#1a1a1a;display:flex;align-items:center;gap:10px;}
+.catalog-title img{height:22px;}
 #view-toggle{display:flex;gap:4px;}
 .vtbtn{padding:5px 16px;border-radius:20px;border:1px solid #888;font-size:12px;cursor:pointer;background:transparent;color:#1a1a1a;transition:all .2s;}
 .vtbtn.active{background:#1a1a1a;color:#f5f2eb;border-color:#1a1a1a;}
-
 #radio-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
 .rpill{padding:4px 13px;border-radius:20px;border:1px solid #888;font-size:12px;cursor:pointer;background:transparent;color:#1a1a1a;transition:all .15s;}
 .rpill.active{background:#1a1a1a;color:#f5f2eb;border-color:#1a1a1a;}
 .rpill:hover:not(.active){background:#ede9e0;}
-
 #cat-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding-bottom:10px;}
 .cpill{padding:4px 13px;border-radius:20px;border:1px solid #888;font-size:12px;cursor:pointer;background:transparent;color:#1a1a1a;transition:all .15s;}
 .cpill.active{background:#2d7a4f;color:#fff;border-color:#2d7a4f;}
 .cpill:hover:not(.active){background:#ede9e0;}
-#search-input{margin-left:auto;padding:4px 12px;border-radius:20px;border:1px solid #888;font-size:12px;background:#f5f2eb;color:#1a1a1a;width:160px;outline:none;}
+#search-input{margin-left:auto;padding:4px 12px;border-radius:20px;border:1px solid #888;font-size:12px;background:#f5f2eb;color:#1a1a1a;width:180px;outline:none;}
 #search-input:focus{border-color:#2d7a4f;}
-
-/* ── LAYOUT SHELL ── */
-#app{display:flex;flex-direction:column;height:100vh;}
-#table-wrap{flex:1;overflow-y:auto;background:#fff;}
-
-/* ── TABLE ── */
+#table-wrap{flex:1;overflow-y:auto;background:#fff;transition:opacity .2s;}
+#table-wrap.fading{opacity:0;}
 table{width:100%;border-collapse:collapse;font-size:12px;}
 thead th{position:sticky;top:0;z-index:10;padding:7px 8px;text-align:left;font-weight:600;font-size:11px;color:#555;border-bottom:2px solid #ddd9cf;background:#f0ede4;white-space:nowrap;}
 thead th.radio-col{background:#dde8f4;color:#1a5fa8;text-align:center;}
-thead th.feat-col{text-align:center;}
-thead th.check-col{text-align:center;width:52px;}
-thead th.img-col{width:44px;}
-thead th.pn-col{min-width:95px;}
-thead th.desc-col{min-width:200px;}
-
-td{padding:7px 8px;border-bottom:0.5px solid #ede9e0;vertical-align:middle;color:#1a1a1a;}
+thead th.fc{text-align:center;}
+thead th.cc{text-align:center;width:52px;}
+thead th.ic{width:44px;}
+td{padding:7px 8px;border-bottom:0.5px solid #ede9e0;vertical-align:middle;}
 tr:hover td{background:#faf8f3;}
-td.feat-col{text-align:center;}
-td.check-col{text-align:center;width:52px;}
-
-.section-row td{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#777;padding:5px 8px;background:#f7f4ed;border-bottom:1px solid #e5e0d5;}
-
-/* ── IMAGE CELL ── */
-.img-box{width:34px;height:34px;background:#f0ede4;border:0.5px solid #ddd9cf;border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;transition:opacity .15s;}
-.img-box:hover{opacity:.8;}
+td.fc{text-align:center;}
+td.cc{text-align:center;width:52px;}
+.sr td{font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#777;padding:5px 8px;background:#f7f4ed;border-bottom:1px solid #e5e0d5;}
+.img-box{width:34px;height:34px;background:#f0ede4;border:0.5px solid #ddd9cf;border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer;overflow:hidden;}
+.img-box:hover{opacity:.75;}
 .img-box img{width:34px;height:34px;object-fit:contain;}
 .img-box svg{opacity:.3;}
-
-/* ── PART NUMBER ── */
-.pn-cell{font-weight:700;white-space:nowrap;cursor:pointer;position:relative;}
-.pn-cell:hover{color:#2d7a4f;}
-.pn-cell .copied{position:absolute;left:0;top:-18px;background:#2d7a4f;color:#fff;font-size:10px;padding:2px 6px;border-radius:4px;white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none;}
-.pn-cell.flash .copied{opacity:1;}
-
-/* ── FEATURE CELLS ── */
-.chk{color:#2d7a4f;font-size:14px;font-weight:700;}
-.dash{color:#bbb;}
+.pn{font-weight:700;white-space:nowrap;cursor:pointer;position:relative;color:#1a1a1a;}
+.pn:hover{color:#2d7a4f;}
+.copied-tip{position:absolute;left:0;top:-20px;background:#2d7a4f;color:#fff;font-size:10px;padding:2px 7px;border-radius:4px;white-space:nowrap;opacity:0;transition:opacity .15s;pointer-events:none;z-index:20;}
+.pn.flash .copied-tip{opacity:1;}
+.chk{color:#2d7a4f;font-weight:700;}
+.dash{color:#ccc;}
 .ip-badge{display:inline-block;padding:1px 7px;border-radius:20px;border:1.5px solid #2d7a4f;color:#2d7a4f;font-size:10px;font-weight:600;}
-
-/* ── MY LIST CHECKBOX ── */
 .mylist-cb{width:15px;height:15px;cursor:pointer;accent-color:#2d7a4f;}
-
-/* ── REPORT BUTTON ── */
 #btn-report{padding:5px 14px;border-radius:20px;border:1.5px solid #2d7a4f;background:transparent;color:#2d7a4f;font-size:12px;font-weight:600;cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .2s;}
 #btn-report:hover{background:#2d7a4f;color:#fff;}
 #report-badge{background:#2d7a4f;color:#fff;border-radius:20px;padding:0 7px;font-size:11px;min-width:20px;text-align:center;}
 #btn-report:hover #report-badge{background:#fff;color:#2d7a4f;}
-
-/* ── SLIDE-OUT DRAWER ── */
-#drawer{position:fixed;top:0;right:-380px;width:380px;height:100vh;background:#fff;box-shadow:-4px 0 20px rgba(0,0,0,.12);z-index:100;display:flex;flex-direction:column;transition:right .3s ease;}
-#drawer.open{right:0;}
-#drawer-header{padding:16px;border-bottom:1px solid #ede9e0;display:flex;align-items:center;justify-content:space-between;}
-#drawer-header h2{font-size:14px;font-weight:600;}
-#drawer-close{background:none;border:none;font-size:18px;cursor:pointer;color:#888;line-height:1;}
-#drawer-body{flex:1;overflow-y:auto;padding:12px;}
-#drawer-empty{color:#aaa;font-size:12px;text-align:center;padding:40px 0;}
-#drawer-footer{padding:12px 16px;border-top:1px solid #ede9e0;display:flex;gap:8px;}
-#btn-clear-list{flex:1;padding:8px;border-radius:8px;border:1px solid #ccc;background:transparent;cursor:pointer;font-size:12px;}
-#btn-export-pdf{flex:2;padding:8px;border-radius:8px;border:none;background:#2d7a4f;color:#fff;cursor:pointer;font-size:12px;font-weight:600;}
-.drawer-item{padding:10px 0;border-bottom:0.5px solid #ede9e0;}
-.drawer-item .di-pn{font-weight:700;font-size:12px;color:#1a1a1a;}
-.drawer-item .di-desc{font-size:11px;color:#666;margin:2px 0 6px;}
-.drawer-item textarea{width:100%;font-size:11px;border:0.5px solid #ddd;border-radius:4px;padding:4px 6px;resize:vertical;min-height:36px;font-family:inherit;color:#1a1a1a;}
-
-/* ── LIGHTBOX ── */
-#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:200;display:none;align-items:center;justify-content:center;}
-#lightbox.open{display:flex;}
-#lightbox img{max-width:80vw;max-height:80vh;object-fit:contain;border-radius:8px;background:#fff;padding:16px;}
-#lightbox-close{position:absolute;top:20px;right:24px;color:#fff;font-size:28px;cursor:pointer;line-height:1;}
-
-/* ── OVERLAY ── */
 #overlay{position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:90;display:none;}
 #overlay.open{display:block;}
-
-/* ── VIEW TRANSITION ── */
-#table-wrap{transition:opacity .2s;}
-#table-wrap.fading{opacity:0;}
-
-/* ── EMPTY STATE ── */
-#empty-state{text-align:center;padding:60px 20px;color:#aaa;font-size:13px;}
+#drawer{position:fixed;top:0;right:-400px;width:380px;height:100vh;background:#fff;box-shadow:-4px 0 20px rgba(0,0,0,.12);z-index:100;display:flex;flex-direction:column;transition:right .3s ease;}
+#drawer.open{right:0;}
+#drawer-hdr{padding:16px;border-bottom:1px solid #ede9e0;display:flex;align-items:center;justify-content:space-between;}
+#drawer-hdr h2{font-size:14px;font-weight:600;}
+#drawer-close{background:none;border:none;font-size:20px;cursor:pointer;color:#888;line-height:1;}
+#drawer-body{flex:1;overflow-y:auto;padding:12px;}
+#drawer-empty{color:#aaa;font-size:12px;text-align:center;padding:40px 0;}
+#drawer-items .di{padding:10px 0;border-bottom:0.5px solid #ede9e0;}
+#drawer-items .di-pn{font-weight:700;font-size:12px;}
+#drawer-items .di-desc{font-size:11px;color:#666;margin:2px 0 5px;}
+#drawer-items textarea{width:100%;font-size:11px;border:0.5px solid #ddd;border-radius:4px;padding:4px 6px;resize:vertical;min-height:34px;font-family:inherit;}
+#drawer-ftr{padding:12px 16px;border-top:1px solid #ede9e0;display:flex;gap:8px;}
+#btn-clear{flex:1;padding:8px;border-radius:8px;border:1px solid #ccc;background:transparent;cursor:pointer;font-size:12px;}
+#btn-pdf{flex:2;padding:8px;border-radius:8px;border:none;background:#2d7a4f;color:#fff;cursor:pointer;font-size:12px;font-weight:600;}
+#lightbox{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:200;display:none;align-items:center;justify-content:center;}
+#lightbox.open{display:flex;}
+#lb-img{max-width:80vw;max-height:80vh;object-fit:contain;border-radius:8px;background:#fff;padding:12px;}
+#lb-close{position:absolute;top:20px;right:24px;color:#fff;font-size:30px;cursor:pointer;line-height:1;}
+#empty-state{text-align:center;padding:60px;color:#aaa;font-size:13px;display:none;}
 </style>
 </head>
 <body>
 <div id="app">
-
-  <!-- FROZEN HEADER -->
   <div id="header">
     <div id="top-bar">
       <div class="catalog-title">
@@ -130,95 +95,82 @@ td.check-col{text-align:center;width:52px;}
     </div>
     <div id="radio-row"></div>
     <div id="cat-row">
-      <!-- category pills injected by JS -->
       <input id="search-input" type="text" placeholder="Search part number or description..." oninput="renderTable()">
     </div>
   </div>
-
-  <!-- SCROLLABLE TABLE -->
   <div id="table-wrap">
     <table id="main-table">
-      <thead id="main-thead"><tr></tr></thead>
-      <tbody id="main-tbody"></tbody>
+      <thead id="t-head"><tr></tr></thead>
+      <tbody id="t-body"></tbody>
     </table>
-    <div id="empty-state" style="display:none;">No accessories match your selection.</div>
+    <div id="empty-state">No accessories match your selection.</div>
   </div>
-
 </div>
 
-<!-- SLIDE-OUT DRAWER -->
 <div id="overlay" onclick="closeDrawer()"></div>
 <div id="drawer">
-  <div id="drawer-header">
+  <div id="drawer-hdr">
     <h2>My List</h2>
     <button id="drawer-close" onclick="closeDrawer()">&#10005;</button>
   </div>
   <div id="drawer-body">
-    <div id="drawer-empty">No items selected.<br>Check boxes next to accessories to add them.</div>
+    <div id="drawer-empty">No items selected. Check boxes to add accessories.</div>
     <div id="drawer-items"></div>
   </div>
-  <div id="drawer-footer">
-    <button id="btn-clear-list" onclick="clearList()">Clear All</button>
-    <button id="btn-export-pdf" onclick="exportPDF()">Export PDF</button>
+  <div id="drawer-ftr">
+    <button id="btn-clear" onclick="clearList()">Clear All</button>
+    <button id="btn-pdf" onclick="exportPDF()">Export PDF</button>
   </div>
 </div>
 
-<!-- LIGHTBOX -->
-<div id="lightbox" onclick="closeLightbox()">
-  <span id="lightbox-close" onclick="closeLightbox()">&#10005;</span>
-  <img id="lightbox-img" src="" alt="">
+<div id="lightbox" onclick="closeLB()">
+  <span id="lb-close" onclick="closeLB()">&#10005;</span>
+  <img id="lb-img" src="" alt="">
 </div>
 
-<!-- DATA -->
 <script src="data/r7-data.js?v=2"></script>
-
-<!-- ENGINE -->
 <script>
+// ── RADIO MAP: display name -> data key ──
+const RADIO_MAP = {
+  'R7':'r7','Ion':'ion','R5':'r5','R7Ex':'r7ex',
+  'XPR 6550':'xpr6550','XPR 7550e':'xpr7550e','XPR 3500e':'xpr3500e'
+};
+const RADIOS = Object.keys(RADIO_MAP);
+
+// ── CAT MAP: display name -> data key ──
+const CAT_MAP = {
+  'RSMs':'rsm','Batteries':'batteries','Chargers':'chargers',
+  'Antennas':'antennas','Headsets':'headsets','Carry':'carry','Cables':'cables','All':'all'
+};
+const CATS = Object.keys(CAT_MAP);
+
+// ── COL LABELS (data key -> display) ──
+const COL_LABELS = {
+  impres:'IMPRES',ip:'IP Rating',hazloc:'HazLoc',windport:'Windport',
+  wwet:'Work-When-Wet',intel:'Intelligent Audio',ains:'AINS',
+  smartsw:'Smart SW',progbtn:'Prog Btn',volsteps:'Vol Steps',
+  jack:'Jack',bt:'Bluetooth',fulldx:'Full Duplex',ion_fw:'Ion FW'
+};
+
+// ── DEFAULT FEATURE COLS PER VIEW ──
+const DEFAULT_FEAT = ['impres','ip','hazloc','windport'];
+
 // ── STATE ──
 let currentView = 'radio';
 let currentRadio = 'R7';
-let currentCat = 'RSMs';
+let currentCat = 'All';
 let myList = {};
-
-// ── RADIOS & CATEGORIES ──
-const RADIOS = ['R7','Ion','R5','R7Ex','XPR 6550','XPR 7550e','XPR 3500e'];
-const CATS = ['RSMs','Batteries','Chargers','Antennas','Headsets','Carry','Cables','All'];
-
-// ── COL LABELS ──
-const COL_LABELS = {
-  IMPRES: 'IMPRES',
-  IP: 'IP Rating',
-  HazLoc: 'HazLoc',
-  Wndprt: 'Windport',
-  InAud: 'Intelligent Audio',
-  SmartSW: 'Smart SW',
-  ProgBtn: 'Prog Btn',
-  WWet: 'Work-When-Wet',
-  AINS: 'AINS',
-  Dims: 'Dimensions (mm)',
-  Capacity: 'Capacity',
-  Wires: 'Wires',
-  NRR: 'NRR',
-  Jack: 'Jack',
-  Pockets: 'Pockets'
-};
-
-const TEXT_COLS = new Set(['IP','HazLoc','Dims','Capacity','Wires','NRR','Jack','Pockets']);
+const IMG_CACHE = {};
 
 // ── INIT ──
 function init() {
-  buildRadioPills();
-  buildCatPills();
-  applyURLState();
-  renderTable();
-}
-
-function applyURLState() {
   const p = new URLSearchParams(location.search);
   if (p.get('view')) currentView = p.get('view');
-  if (p.get('radio')) currentRadio = p.get('radio');
-  if (p.get('cat')) currentCat = p.get('cat');
-  document.querySelectorAll('.vtbtn').forEach(b => b.classList.toggle('active', b.textContent.trim() === (currentView === 'radio' ? 'By Radio' : 'Full Matrix')));
+  if (p.get('radio') && RADIO_MAP[p.get('radio')]) currentRadio = p.get('radio');
+  if (p.get('cat') && CAT_MAP[p.get('cat')]) currentCat = p.get('cat');
+  buildRadioPills();
+  buildCatPills();
+  renderTable();
 }
 
 function pushState() {
@@ -231,318 +183,274 @@ function pushState() {
 
 // ── PILLS ──
 function buildRadioPills() {
-  const row = document.getElementById('radio-row');
-  row.innerHTML = RADIOS.map(r =>
-    `<button class="rpill${r===currentRadio?' active':''}" onclick="selectRadio('${r}')">${r}</button>`
+  document.getElementById('radio-row').innerHTML = RADIOS.map(r =>
+    `<button class="rpill${r===currentRadio&&currentView==='radio'?' active':''}" onclick="selectRadio('${r}')">${r}</button>`
   ).join('');
 }
 
 function buildCatPills() {
-  const row = document.getElementById('cat-row');
   const pills = CATS.map(c =>
     `<button class="cpill${c===currentCat?' active':''}" onclick="selectCat('${c}')">${c}</button>`
   ).join('');
-  row.innerHTML = pills + row.innerHTML;
+  document.getElementById('cat-row').insertAdjacentHTML('afterbegin', pills);
 }
 
 function selectRadio(r) {
   currentRadio = r;
+  if (currentView !== 'radio') { currentView = 'radio'; syncViewBtns(); }
   document.querySelectorAll('.rpill').forEach(b => b.classList.toggle('active', b.textContent.trim()===r));
-  fadeRender();
-  pushState();
+  fadeRender(); pushState();
 }
 
 function selectCat(c) {
   currentCat = c;
   document.querySelectorAll('.cpill').forEach(b => b.classList.toggle('active', b.textContent.trim()===c));
-  fadeRender();
-  pushState();
+  fadeRender(); pushState();
 }
 
 function setView(v) {
   currentView = v;
-  document.querySelectorAll('.vtbtn').forEach(b => b.classList.toggle('active', b.textContent.trim() === (v==='radio'?'By Radio':'Full Matrix')));
-  // In matrix view deactivate radio pills visually
+  syncViewBtns();
   document.querySelectorAll('.rpill').forEach(b => b.classList.toggle('active', v==='radio' && b.textContent.trim()===currentRadio));
-  fadeRender();
-  pushState();
+  fadeRender(); pushState();
+}
+
+function syncViewBtns() {
+  document.querySelectorAll('.vtbtn').forEach(b => b.classList.toggle('active', b.textContent.trim()===(currentView==='radio'?'By Radio':'Full Matrix')));
 }
 
 function fadeRender() {
   const tw = document.getElementById('table-wrap');
   tw.classList.add('fading');
-  setTimeout(() => { renderTable(); tw.classList.remove('fading'); }, 180);
+  setTimeout(()=>{ renderTable(); tw.classList.remove('fading'); }, 160);
 }
 
 // ── DATA HELPERS ──
-function getRadioData(radioName) {
-  if (!window.RADIOS_DATA) return null;
-  return window.RADIOS_DATA.find(r => r.radio === radioName) || null;
+function getDataKey(radioName) { return RADIO_MAP[radioName]; }
+
+function getCatSections(radioKey, catKey) {
+  const rd = window.RADIOS_DATA && window.RADIOS_DATA[radioKey];
+  if (!rd) return [];
+  const search = document.getElementById('search-input').value.toLowerCase().trim();
+  let sections = [];
+  if (catKey === 'all') {
+    Object.values(rd.categories).forEach(cat => {
+      cat.sections.forEach(sec => sections.push({title: sec.title, items: sec.items, cols: cat.cols}));
+    });
+  } else {
+    const cat = rd.categories[catKey];
+    if (!cat) return [];
+    cat.sections.forEach(sec => sections.push({title: sec.title, items: sec.items, cols: cat.cols}));
+  }
+  if (search) {
+    sections = sections.map(s => ({...s, items: s.items.filter(i =>
+      (i.pn||'').toLowerCase().includes(search) || (i.desc||'').toLowerCase().includes(search)
+    )})).filter(s => s.items.length);
+  }
+  return sections;
 }
 
-function getFilteredSections(radioData) {
-  if (!radioData) return [];
-  const search = document.getElementById('search-input').value.toLowerCase();
-  return radioData.sections.map(sec => {
-    let items = sec.items;
-    if (currentCat !== 'All') {
-      items = items.filter(item => (item.cat || '') === currentCat || sec.cat === currentCat);
-    }
-    if (search) {
-      items = items.filter(item =>
-        (item.pn||'').toLowerCase().includes(search) ||
-        (item.desc||'').toLowerCase().includes(search)
-      );
-    }
-    return {...sec, items};
-  }).filter(sec => sec.items.length > 0);
-}
-
-// ── IMAGE FETCH ──
-const IMG_CACHE = {};
-const MSI_BASE = 'https://www.motorolasolutions.com/content/dam/msi/images/products/';
-
-function getImgUrl(pn) {
-  if (IMG_CACHE[pn] !== undefined) return IMG_CACHE[pn];
-  IMG_CACHE[pn] = null;
-  const candidates = [
-    `https://www.motorolasolutions.com/content/dam/msi/images/products/accessories/${pn.toLowerCase()}.jpg`,
-    `https://www.motorolasolutions.com/content/dam/msi/images/products/accessories/${pn.toLowerCase()}_pdp_na_na.jpg`
-  ];
-  const img = new Image();
-  img.onload = () => { IMG_CACHE[pn] = img.src; refreshImgCell(pn); };
-  img.src = candidates[0];
-  return null;
-}
-
-function refreshImgCell(pn) {
-  document.querySelectorAll(`[data-pn="${pn}"] .img-box`).forEach(box => {
-    box.innerHTML = `<img src="${IMG_CACHE[pn]}" alt="${pn}" onclick="openLightbox('${IMG_CACHE[pn]}')">`;
-  });
-}
-
-function camSVG() {
-  return `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="4" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="8.5" r="2.2" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 4V3.5A.5.5 0 016 3h4a.5.5 0 01.5.5V4" stroke="currentColor" stroke-width="1.2"/></svg>`;
-}
-
-// ── RENDER TABLE ──
+// ── RENDER ──
 function renderTable() {
-  const thead = document.getElementById('main-thead');
-  const tbody = document.getElementById('main-tbody');
-  const empty = document.getElementById('empty-state');
-
-  if (currentView === 'radio') renderRadioView(thead, tbody);
-  else renderMatrixView(thead, tbody);
-
-  const hasRows = tbody.querySelectorAll('tr:not(.section-row)').length > 0;
-  empty.style.display = hasRows ? 'none' : 'block';
+  if (currentView === 'radio') renderRadioView();
+  else renderMatrixView();
 }
 
-function renderRadioView(thead, tbody) {
-  const rd = getRadioData(currentRadio);
-  const sections = rd ? getFilteredSections(rd) : [];
+function renderRadioView() {
+  const rk = getDataKey(currentRadio);
+  const ck = CAT_MAP[currentCat];
+  const sections = getCatSections(rk, ck);
 
-  // Collect all feature cols used across visible items
-  const featCols = [];
-  const seen = new Set();
-  sections.forEach(sec => sec.items.forEach(item => {
-    (item.cols || []).forEach(c => { if (!seen.has(c)) { seen.add(c); featCols.push(c); }});
-  }));
+  // Collect feat cols from data cols arrays
+  const featSet = new Set();
+  sections.forEach(s => (s.cols||DEFAULT_FEAT).forEach(c => featSet.add(c)));
+  const featCols = [...featSet].filter(c => DEFAULT_FEAT.includes(c) || c === 'wwet');
 
-  // Header
-  thead.innerHTML = `<tr>
-    <th class="img-col"></th>
-    <th class="pn-col">Part No.</th>
-    <th class="desc-col">Description</th>
-    ${featCols.map(c=>`<th class="feat-col">${COL_LABELS[c]||c}</th>`).join('')}
-    <th class="check-col">My List</th>
+  const span = 3 + featCols.length + 1;
+  document.getElementById('t-head').innerHTML = `<tr>
+    <th class="ic"></th>
+    <th>Part No.</th>
+    <th style="min-width:200px">Description</th>
+    ${featCols.map(c=>`<th class="fc">${COL_LABELS[c]||c}</th>`).join('')}
+    <th class="cc">My List</th>
   </tr>`;
 
-  // Body
   let html = '';
   sections.forEach(sec => {
-    html += `<tr class="section-row"><td colspan="${3+featCols.length+2}">${sec.label||sec.name||''}</td></tr>`;
-    sec.items.forEach(item => {
-      const pn = item.pn || '';
-      const imgUrl = getImgUrl(pn);
-      const imgHTML = imgUrl
-        ? `<img src="${imgUrl}" alt="${pn}" onclick="openLightbox('${imgUrl}')">`
-        : camSVG();
-      const checked = myList[pn] ? 'checked' : '';
-      const feats = featCols.map(c => {
-        const v = item.checks ? item.checks[c] : undefined;
-        return `<td class="feat-col">${renderFeat(c,v)}</td>`;
-      }).join('');
+    html += `<tr class="sr"><td colspan="${span}">${sec.title||''}</td></tr>`;
+    (sec.items||[]).forEach(item => {
+      const pn = item.pn||'';
+      const checked = myList[pn]?'checked':'';
       html += `<tr data-pn="${pn}">
-        <td class="img-col"><div class="img-box" onclick="imgClick('${pn}')">${imgHTML}</div></td>
-        <td class="pn-cell" onclick="copyPN('${pn}',this)"><span class="copied">Copied!</span>${pn}</td>
+        <td><div class="img-box" onclick="imgClick('${pn}')">${imgCell(pn)}</div></td>
+        <td><div class="pn" onclick="copyPN('${pn}',this)"><span class="copied-tip">Copied!</span>${pn}</div></td>
         <td>${item.desc||''}</td>
-        ${feats}
-        <td class="check-col"><input type="checkbox" class="mylist-cb" ${checked} onchange="toggleMyList('${pn}','${(item.desc||'').replace(/'/g,"\\'")}',this)"></td>
+        ${featCols.map(c=>`<td class="fc">${renderFeat(c,item.checks?item.checks[c]:undefined)}</td>`).join('')}
+        <td class="cc"><input type="checkbox" class="mylist-cb" ${checked} onchange="toggleML('${pn}',this,${JSON.stringify(item.desc||'')})"></td>
       </tr>`;
     });
   });
-  tbody.innerHTML = html;
+  document.getElementById('t-body').innerHTML = html || '';
+  document.getElementById('empty-state').style.display = sections.length ? 'none' : 'block';
+  prefetchImages(sections);
 }
 
-function renderMatrixView(thead, tbody) {
-  // Gather all items across all radios for current cat/search
-  const allSections = {};
-  const radioFeatCols = {};
-  const search = document.getElementById('search-input').value.toLowerCase();
+function renderMatrixView() {
+  const ck = CAT_MAP[currentCat];
+  const search = document.getElementById('search-input').value.toLowerCase().trim();
+  const allSecs = {};
 
   RADIOS.forEach(rn => {
-    const rd = getRadioData(rn);
+    const rk = RADIO_MAP[rn];
+    const rd = window.RADIOS_DATA && window.RADIOS_DATA[rk];
     if (!rd) return;
-    rd.sections.forEach(sec => {
-      let items = sec.items;
-      if (currentCat !== 'All') items = items.filter(i => (i.cat||'')=== currentCat || sec.cat===currentCat);
-      if (search) items = items.filter(i => (i.pn||'').toLowerCase().includes(search)||(i.desc||'').toLowerCase().includes(search));
-      if (!items.length) return;
-      const key = sec.label||sec.name||'';
-      if (!allSections[key]) allSections[key] = {};
-      items.forEach(item => {
-        const pn = item.pn||'';
-        if (!allSections[key][pn]) allSections[key][pn] = {desc:item.desc||'', radios:{}, checks:item.checks||{}};
-        allSections[key][pn].radios[rn] = true;
+    const cats = ck==='all' ? Object.values(rd.categories) : [rd.categories[ck]].filter(Boolean);
+    cats.forEach(cat => {
+      (cat.sections||[]).forEach(sec => {
+        (sec.items||[]).forEach(item => {
+          const pn = item.pn||'';
+          if (search && !(pn.toLowerCase().includes(search)||(item.desc||'').toLowerCase().includes(search))) return;
+          if (!allSecs[sec.title]) allSecs[sec.title] = {};
+          if (!allSecs[sec.title][pn]) allSecs[sec.title][pn] = {desc:item.desc||'',radios:{},checks:item.checks||{}};
+          allSecs[sec.title][pn].radios[rn] = true;
+        });
       });
     });
   });
 
-  // Feature cols — standard set for matrix
-  const featCols = ['IMPRES','IP','HazLoc','Wndprt'];
-
-  // Header
-  thead.innerHTML = `<tr>
-    <th class="img-col"></th>
-    <th class="pn-col">Part No.</th>
-    <th class="desc-col">Description</th>
-    ${RADIOS.map(r=>`<th class="feat-col radio-col">${r}</th>`).join('')}
-    ${featCols.map(c=>`<th class="feat-col">${COL_LABELS[c]||c}</th>`).join('')}
-    <th class="check-col">My List</th>
+  const span = 3 + RADIOS.length + DEFAULT_FEAT.length + 1;
+  document.getElementById('t-head').innerHTML = `<tr>
+    <th class="ic"></th>
+    <th>Part No.</th>
+    <th style="min-width:180px">Description</th>
+    ${RADIOS.map(r=>`<th class="fc radio-col">${r}</th>`).join('')}
+    ${DEFAULT_FEAT.map(c=>`<th class="fc">${COL_LABELS[c]||c}</th>`).join('')}
+    <th class="cc">My List</th>
   </tr>`;
 
   let html = '';
-  Object.keys(allSections).forEach(secLabel => {
-    const items = allSections[secLabel];
-    const colSpan = 3 + RADIOS.length + featCols.length + 1;
-    html += `<tr class="section-row"><td colspan="${colSpan}">${secLabel}</td></tr>`;
-    Object.keys(items).forEach(pn => {
-      const item = items[pn];
-      const imgUrl = getImgUrl(pn);
-      const imgHTML = imgUrl ? `<img src="${imgUrl}" alt="${pn}" onclick="openLightbox('${imgUrl}')">` : camSVG();
-      const checked = myList[pn] ? 'checked' : '';
-      const radioCells = RADIOS.map(r => `<td class="feat-col">${item.radios[r]?'<span class="chk">&#10003;</span>':'<span class="dash">&mdash;</span>'}</td>`).join('');
-      const featCells = featCols.map(c => `<td class="feat-col">${renderFeat(c, item.checks[c])}</td>`).join('');
+  Object.keys(allSecs).forEach(title => {
+    html += `<tr class="sr"><td colspan="${span}">${title}</td></tr>`;
+    Object.keys(allSecs[title]).forEach(pn => {
+      const item = allSecs[title][pn];
+      const checked = myList[pn]?'checked':'';
       html += `<tr data-pn="${pn}">
-        <td class="img-col"><div class="img-box" onclick="imgClick('${pn}')">${imgHTML}</div></td>
-        <td class="pn-cell" onclick="copyPN('${pn}',this)"><span class="copied">Copied!</span>${pn}</td>
+        <td><div class="img-box" onclick="imgClick('${pn}')">${imgCell(pn)}</div></td>
+        <td><div class="pn" onclick="copyPN('${pn}',this)"><span class="copied-tip">Copied!</span>${pn}</div></td>
         <td>${item.desc}</td>
-        ${radioCells}
-        ${featCells}
-        <td class="check-col"><input type="checkbox" class="mylist-cb" ${checked} onchange="toggleMyList('${pn}','${item.desc.replace(/'/g,"\\'")}',this)"></td>
+        ${RADIOS.map(r=>`<td class="fc">${item.radios[r]?'<span class="chk">&#10003;</span>':'<span class="dash">&mdash;</span>'}</td>`).join('')}
+        ${DEFAULT_FEAT.map(c=>`<td class="fc">${renderFeat(c,item.checks[c])}</td>`).join('')}
+        <td class="cc"><input type="checkbox" class="mylist-cb" ${checked} onchange="toggleML('${pn}',this,${JSON.stringify(item.desc)})"></td>
       </tr>`;
     });
   });
-  tbody.innerHTML = html;
+  document.getElementById('t-body').innerHTML = html || '';
+  document.getElementById('empty-state').style.display = Object.keys(allSecs).length ? 'none' : 'block';
 }
 
 function renderFeat(col, val) {
-  if (val === undefined || val === null || val === 0 || val === false || val === '') return '<span class="dash">&mdash;</span>';
-  if (val === true || val === 1) return '<span class="chk">&#10003;</span>';
-  if (col === 'IP') return `<span class="ip-badge">${val}</span>`;
+  if (val===undefined||val===null||val===0||val===false||val==='') return '<span class="dash">&mdash;</span>';
+  if (val===true||val===1) return '<span class="chk">&#10003;</span>';
+  if (col==='ip') return `<span class="ip-badge">${val}</span>`;
   return `<span>${val}</span>`;
 }
 
-// ── COPY PART NUMBER ──
+// ── IMAGES ──
+function camSVG() {
+  return `<svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="4" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.2"/><circle cx="8" cy="8.5" r="2.2" stroke="currentColor" stroke-width="1.2"/><path d="M5.5 4V3.5A.5.5 0 016 3h4a.5.5 0 01.5.5V4" stroke="currentColor" stroke-width="1.2"/></svg>`;
+}
+
+function imgCell(pn) {
+  const url = IMG_CACHE[pn];
+  if (url) return `<img src="${url}" alt="${pn}">`;
+  return camSVG();
+}
+
+function prefetchImages(sections) {
+  sections.forEach(sec => (sec.items||[]).forEach(item => tryLoadImg(item.pn||'')));
+}
+
+function tryLoadImg(pn) {
+  if (!pn || IMG_CACHE[pn] !== undefined) return;
+  IMG_CACHE[pn] = null;
+  const urls = [
+    `https://www.motorolasolutions.com/content/dam/msi/images/products/accessories/${pn.toLowerCase()}_pdp_na_na.jpg`,
+    `https://www.motorolasolutions.com/content/dam/msi/images/products/accessories/${pn.toLowerCase()}.jpg`
+  ];
+  const img = new Image();
+  img.onload = () => {
+    IMG_CACHE[pn] = img.src;
+    document.querySelectorAll(`[data-pn="${pn}"] .img-box`).forEach(box => {
+      box.innerHTML = `<img src="${img.src}" alt="${pn}">`;
+    });
+  };
+  img.src = urls[0];
+}
+
+function imgClick(pn) {
+  const url = IMG_CACHE[pn];
+  if (url) { document.getElementById('lb-img').src = url; document.getElementById('lightbox').classList.add('open'); }
+}
+
+// ── COPY PN ──
 function copyPN(pn, el) {
   navigator.clipboard.writeText(pn).catch(()=>{});
   el.classList.add('flash');
   setTimeout(()=>el.classList.remove('flash'), 1400);
 }
 
-// ── IMAGE CLICK ──
-function imgClick(pn) {
-  const url = IMG_CACHE[pn];
-  if (url) openLightbox(url);
-}
-
 // ── LIGHTBOX ──
-function openLightbox(url) {
-  document.getElementById('lightbox-img').src = url;
-  document.getElementById('lightbox').classList.add('open');
-}
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('open');
-}
+function closeLB() { document.getElementById('lightbox').classList.remove('open'); }
 
 // ── MY LIST ──
-function toggleMyList(pn, desc, cb) {
+function toggleML(pn, cb, desc) {
   if (cb.checked) myList[pn] = {pn, desc, note:''};
   else delete myList[pn];
-  updateBadge();
-  renderDrawerItems();
-}
-
-function updateBadge() {
   document.getElementById('report-badge').textContent = Object.keys(myList).length;
+  if (document.getElementById('drawer').classList.contains('open')) renderDrawer();
 }
 
-function openDrawer() {
-  renderDrawerItems();
-  document.getElementById('drawer').classList.add('open');
-  document.getElementById('overlay').classList.add('open');
-}
-
-function closeDrawer() {
-  document.getElementById('drawer').classList.remove('open');
-  document.getElementById('overlay').classList.remove('open');
-}
+function openDrawer() { renderDrawer(); document.getElementById('drawer').classList.add('open'); document.getElementById('overlay').classList.add('open'); }
+function closeDrawer() { document.getElementById('drawer').classList.remove('open'); document.getElementById('overlay').classList.remove('open'); }
 
 function clearList() {
   myList = {};
-  document.querySelectorAll('.mylist-cb').forEach(cb => cb.checked = false);
-  updateBadge();
-  renderDrawerItems();
+  document.querySelectorAll('.mylist-cb').forEach(cb=>cb.checked=false);
+  document.getElementById('report-badge').textContent = '0';
+  renderDrawer();
 }
 
-function renderDrawerItems() {
+function renderDrawer() {
   const items = Object.values(myList);
-  const empty = document.getElementById('drawer-empty');
-  const container = document.getElementById('drawer-items');
-  empty.style.display = items.length ? 'none' : 'block';
-  container.innerHTML = items.map(item => `
-    <div class="drawer-item">
-      <div class="di-pn">${item.pn}</div>
-      <div class="di-desc">${item.desc}</div>
-      <textarea placeholder="Notes..." oninput="myList['${item.pn}'].note=this.value">${item.note||''}</textarea>
-    </div>
-  `).join('');
+  document.getElementById('drawer-empty').style.display = items.length?'none':'block';
+  document.getElementById('drawer-items').innerHTML = items.map(i=>`
+    <div class="di">
+      <div class="di-pn">${i.pn}</div>
+      <div class="di-desc">${i.desc}</div>
+      <textarea placeholder="Notes..." oninput="myList['${i.pn}'].note=this.value">${i.note||''}</textarea>
+    </div>`).join('');
 }
 
-// ── PDF EXPORT (placeholder — full styling next commit) ──
 function exportPDF() {
   const items = Object.values(myList);
   if (!items.length) { alert('No items in your list yet.'); return; }
   const win = window.open('','_blank');
   win.document.write(`<html><head><title>My Accessory List</title>
-  <style>body{font-family:Arial,sans-serif;padding:32px;}h1{font-size:18px;margin-bottom:4px;}
-  .sub{color:#666;font-size:12px;margin-bottom:24px;}
+  <style>body{font-family:Arial,sans-serif;padding:32px;color:#1a1a1a;}
+  h1{font-size:16px;margin:8px 0 2px;}p{font-size:11px;color:#666;margin-bottom:20px;}
   table{width:100%;border-collapse:collapse;font-size:12px;}
-  th{background:#f0ede4;padding:7px 8px;text-align:left;border-bottom:2px solid #ccc;}
-  td{padding:7px 8px;border-bottom:1px solid #eee;}
+  th{background:#f0ede4;padding:7px 8px;text-align:left;border-bottom:2px solid #ccc;font-size:11px;}
+  td{padding:7px 8px;border-bottom:1px solid #eee;vertical-align:top;}
   .pn{font-weight:700;}</style></head><body>
-  <img src="https://dlun1971.github.io/Shared/motorola-solutions-logo.png" style="height:28px;margin-bottom:12px;"><br>
+  <img src="https://dlun1971.github.io/Shared/motorola-solutions-logo.png" style="height:26px;margin-bottom:10px;display:block;">
   <h1>MOTOTRBO Professional — My Accessory List</h1>
-  <div class="sub">Generated ${new Date().toLocaleDateString()}</div>
+  <p>Generated ${new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'})}</p>
   <table><thead><tr><th>Part No.</th><th>Description</th><th>Notes</th></tr></thead><tbody>
   ${items.map(i=>`<tr><td class="pn">${i.pn}</td><td>${i.desc}</td><td>${i.note||''}</td></tr>`).join('')}
   </tbody></table></body></html>`);
-  win.document.close();
-  win.print();
+  win.document.close(); win.print();
 }
 
-// ── START ──
 document.addEventListener('DOMContentLoaded', init);
 </script>
 </body>
