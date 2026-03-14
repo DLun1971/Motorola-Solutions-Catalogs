@@ -451,7 +451,7 @@ function exportPDF() {
   win.document.close(); win.print();
 }
 
-document.addEventListener('DOMContentLoaded', init);
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
 </script>
 </body>
 </html>
