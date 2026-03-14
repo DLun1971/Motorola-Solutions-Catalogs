@@ -261,10 +261,8 @@ function renderRadioView() {
   const ck = PCR_CAT_MAP[currentCat];
   const sections = getCatSections(rk, ck);
 
-  // Collect feat cols from data cols arrays
-  const featSet = new Set();
-  sections.forEach(s => (s.cols||PCR_DEFAULT_FEAT).forEach(c => featSet.add(c)));
-  const featCols = [...featSet].filter(c => PCR_DEFAULT_FEAT.includes(c) || c === 'wwet');
+  // Always use the canonical lowercase check keys
+  const featCols = PCR_DEFAULT_FEAT;
 
   const span = 3 + featCols.length + 1;
   document.getElementById('t-head').innerHTML = `<tr>
@@ -318,12 +316,13 @@ function renderMatrixView() {
     });
   });
 
-  const span = 3 + PCR_RADIOS.length + 1;
+  const span = 3 + PCR_RADIOS.length + PCR_DEFAULT_FEAT.length + 1;
   document.getElementById('t-head').innerHTML = `<tr>
     <th class="ic"></th>
     <th>Part No.</th>
     <th style="min-width:180px">Description</th>
     ${PCR_RADIOS.map(r=>`<th class="fc radio-col">${r}</th>`).join('')}
+    ${PCR_DEFAULT_FEAT.map(c=>`<th class="fc">${PCR_COL_LABELS[c]||c}</th>`).join('')}
     <th class="cc">My List</th>
   </tr>`;
 
@@ -338,6 +337,7 @@ function renderMatrixView() {
         <td><div class="pn" onclick="copyPN('${pn}',this)"><span class="copied-tip">Copied!</span>${pn}</div></td>
         <td>${item.desc}</td>
         ${PCR_RADIOS.map(r=>`<td class="fc">${item.radios[r]?'<span class="chk">&#10003;</span>':'<span class="dash">&mdash;</span>'}</td>`).join('')}
+        ${PCR_DEFAULT_FEAT.map(c=>`<td class="fc">${renderFeat(c,item.checks[c])}</td>`).join('')}
         <td class="cc"><input type="checkbox" class="mylist-cb" ${checked} onchange="toggleML('${pn}',this,${JSON.stringify(item.desc)})"></td>
       </tr>`;
     });
